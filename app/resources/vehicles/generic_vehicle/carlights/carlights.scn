@@ -1,0 +1,667 @@
+{
+	"canvas": {
+		"clear_color": true,
+		"clear_z": true,
+		"color": [
+			0,
+			0,
+			0,
+			255
+		]
+	},
+	"environment": {
+		"ambient": [
+			0,
+			0,
+			0,
+			255
+		],
+		"brdf_map": "core/pbr/brdf.dds",
+		"current_camera": null,
+		"fog_color": [
+			255,
+			255,
+			255,
+			255
+		],
+		"fog_far": 0.0,
+		"fog_near": 0.0,
+		"probe": {
+			"irradiance_map": "core/pbr/probe.hdr.irradiance",
+			"parallax": 0.0,
+			"pos": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"radiance_map": "core/pbr/probe.hdr.radiance",
+			"rot": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"type": "sphere"
+		}
+	},
+	"key_values": null,
+	"nodes": [
+		{
+			"components": [
+				0,
+				4294967295,
+				0,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 0,
+			"name": "carlight_reverse"
+		},
+		{
+			"components": [
+				1,
+				4294967295,
+				1,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 1,
+			"name": "carlight_head_light"
+		},
+		{
+			"components": [
+				2,
+				4294967295,
+				2,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 2,
+			"name": "carlight_day_light"
+		},
+		{
+			"components": [
+				3,
+				4294967295,
+				3,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 3,
+			"name": "carlight_brake"
+		},
+		{
+			"components": [
+				4,
+				4294967295,
+				4,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 4,
+			"name": "carlight_backLight"
+		},
+		{
+			"components": [
+				5,
+				4294967295,
+				5,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 5,
+			"name": "carlight_turn_left"
+		},
+		{
+			"components": [
+				6,
+				4294967295,
+				6,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 6,
+			"name": "carlight_turn_right"
+		}
+	],
+	"objects": [
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "carlights"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "add",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 0
+						},
+						{
+							"name": "uSelfMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 4
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.5,
+								0.25,
+								0.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": false
+				}
+			],
+			"name": "vehicles/generic_vehicle/carlights/carlight_reverse_44.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "carlights"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "add",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 0
+						},
+						{
+							"name": "uSelfMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 4
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.5,
+								0.25,
+								0.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": false
+				}
+			],
+			"name": "vehicles/generic_vehicle/carlights/carlight_head_light_45.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "carlights"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "add",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 0
+						},
+						{
+							"name": "uSelfMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 4
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.5,
+								0.25,
+								0.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": false
+				}
+			],
+			"name": "vehicles/generic_vehicle/carlights/carlight_day_light_46.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "carlights"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "add",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 0
+						},
+						{
+							"name": "uSelfMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 4
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.5,
+								0.25,
+								0.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": false
+				}
+			],
+			"name": "vehicles/generic_vehicle/carlights/carlight_brake_47.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "carlights"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "add",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 0
+						},
+						{
+							"name": "uSelfMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 4
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.5,
+								0.25,
+								0.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": false
+				}
+			],
+			"name": "vehicles/generic_vehicle/carlights/carlight_backLight_48.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "carlights"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "add",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 0
+						},
+						{
+							"name": "uSelfMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 4
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.5,
+								0.25,
+								0.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": false
+				}
+			],
+			"name": "vehicles/generic_vehicle/carlights/carlight_turn_left_49.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "carlights"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "add",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 0
+						},
+						{
+							"name": "uSelfMap",
+							"path": "vehicles/generic_vehicle/carlights/Car03_Lights_Emissive.hdr",
+							"stage": 4
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.5882353186607361,
+								0.5882353186607361,
+								0.5882353186607361,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.5,
+								0.25,
+								0.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": false
+				}
+			],
+			"name": "vehicles/generic_vehicle/carlights/carlight_turn_right_50.geo"
+		}
+	],
+	"transforms": [
+		{
+			"parent": null,
+			"pos": [
+				0.0,
+				0.8885716199874878,
+				1.7383638620376587
+			],
+			"rot": [
+				90.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				0.9999998807907104,
+				0.9999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				0.0,
+				0.7301385998725891,
+				-2.1214568614959717
+			],
+			"rot": [
+				90.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				0.9999998807907104,
+				0.9999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				0.0,
+				0.7210953235626221,
+				-2.153395175933838
+			],
+			"rot": [
+				90.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				0.9999998807907104,
+				0.9999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				0.0,
+				0.9400854706764221,
+				1.674100399017334
+			],
+			"rot": [
+				90.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				0.9999998807907104,
+				0.9999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				0.0,
+				0.9224253296852112,
+				1.6755602359771729
+			],
+			"rot": [
+				90.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				0.9999998807907104,
+				0.9999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				0.6175822019577026,
+				0.8686914443969727,
+				-0.25292491912841797
+			],
+			"rot": [
+				90.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				0.9999998807907104,
+				0.9999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-0.6175822019577026,
+				0.8686914443969727,
+				-0.25292491912841797
+			],
+			"rot": [
+				90.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				0.9999998807907104,
+				0.9999998807907104
+			]
+		}
+	]
+}

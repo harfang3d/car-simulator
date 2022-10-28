@@ -1,0 +1,10 @@
+{
+	"collision": {
+		"input": [{
+			"geometry": "road_blocks/block_highway_turn_in_col/block_highway_turn_in_col_40.geo",
+			"matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+			"type": "triangle"
+		}],
+		"type": "tree"
+	}
+}

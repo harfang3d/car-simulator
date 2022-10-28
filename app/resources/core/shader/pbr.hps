@@ -1,0 +1,3 @@
+{
+	"features": ["OptionalBaseColorOpacityMap", "OptionalOcclusionRoughnessMetalnessMap", "OptionalNormalMap", "OptionalAlphaCut", "OptionalSelfMap", "_OptionalSkinning"]
+}
