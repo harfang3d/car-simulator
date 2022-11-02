@@ -6,6 +6,24 @@
 * Built on [Harfang 3D](https://github.com/harfang3d/harfang3d)
 * **W.I.P**
 
+### Running the simulator
+
+This **prototype** demonstrates the usage of Raycast Car Mechanics (suspension, braking, accelerating, collisions etc...) using the HARFANG API in **Python**.
+
+To run the prototype:
+
+1. Download or clone this repository to your computer _(eg. in `C:/car-simulator`)_.
+2. Make sure _Python_ 3.2 or higher is installed on your computer with the Harfang 3D wheel [Harfang PyPi Project](https://pypi.org/project/harfang/)
+3. Download _assetc_ for your platform from [here](https://harfang3d.com/releases) to compile the resources.
+4. Extract _assetc_ to the correct folder _(eg. `c:/car-simulator/app/bin/harfang/assetc`)_, the path should already be here, all you have to do is extract the assetc files into this folder.
+5. Run **1-build_assets.bat**.
+6. Run **2-run.bat** or **3-run_vr.bat**.
+
+After the compilation process finishes, you will see a `resources_compiled` folder next to the tutorials resources folder.
+
+You can now execute the prototype from the folder you unzipped it to.
+
+
 ### Screenshots of the actual version
 
 ![](img/car_interior.png)<br>
