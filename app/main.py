@@ -15,9 +15,6 @@ if len(sys.argv) > 1:
 hg.InputInit()
 hg.WindowSystemInit()
 
-
-
-
 res_x, res_y = 1900, 1000
 win = hg.RenderInit('Raycast car', res_x, res_y, hg.RF_VSync | hg.RF_MSAA4X)
 
@@ -88,7 +85,7 @@ mat_ground = create_material(hg.Vec4(22/255, 42/255, 42/255, 1),hg.Vec4(1, 1, 0,
 
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
-car = CreateRCCar("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, 0), hg.Vec3(0, 0, 0))
+car = CreateRCCar("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, 1000), hg.Vec3(0, 0, 0))
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
 
@@ -194,7 +191,6 @@ while not keyboard.Pressed(hg.K_Escape):
 			opaque_view_id = hg.GetSceneForwardPipelinePassViewId(passId, hg.SFPP_Opaque)
 			for line in car_lines:
 				draw_line(line[0], line[1], line[2], opaque_view_id, vtx_line_layout, lines_program)
-
 
 	# EoF
 	if render_mode == "vr":
