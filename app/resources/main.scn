@@ -67,34 +67,7 @@
 			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
 		},
 		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
-		},
-		{
-			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
+			"name": "road_blocks/block_highway_turn_in/block_highway_turn_in.scn"
 		}
 	],
 	"key_values": null,
@@ -182,19 +155,6 @@
 		},
 		{
 			"components": [
-				13,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 27,
-			"instance": 11,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
 				4,
 				4294967295,
 				4294967295,
@@ -202,113 +162,9 @@
 				4294967295
 			],
 			"disabled": false,
-			"idx": 28,
+			"idx": 45,
 			"instance": 2,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
-				5,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 30,
-			"instance": 3,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
-				6,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 32,
-			"instance": 4,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
-				7,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 34,
-			"instance": 5,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
-				8,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 36,
-			"instance": 6,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
-				9,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 38,
-			"instance": 7,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
-				10,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 40,
-			"instance": 8,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
-				11,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 42,
-			"instance": 9,
-			"name": "block_highway_straight"
-		},
-		{
-			"components": [
-				12,
-				4294967295,
-				4294967295,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 44,
-			"instance": 10,
-			"name": "block_highway_straight"
+			"name": "block_highway_turn_in"
 		}
 	],
 	"transforms": [
@@ -320,7 +176,7 @@
 				13.72885799407959
 			],
 			"rot": [
-				18.90964698791504,
+				18.909645080566406,
 				-122.79573059082031,
 				9.935133675753605e-07
 			],
@@ -387,174 +243,12 @@
 		{
 			"parent": null,
 			"pos": [
-				0.0,
-				0.0,
-				5000.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
-				0.0,
-				7500.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
-				0.0,
-				10000.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
-				0.0,
-				12500.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
-				0.0,
-				15000.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
-				0.0,
-				17500.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
-				0.0,
-				20000.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
-				0.0,
-				22500.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
-				0.0,
-				25000.0
-			],
-			"rot": [
-				-0.0,
-				0.0,
-				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": null,
-			"pos": [
-				0.0,
+				-260.0,
 				0.0,
 				2500.0
 			],
 			"rot": [
-				-0.0,
+				0.0,
 				0.0,
 				0.0
 			],
