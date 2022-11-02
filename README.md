@@ -12,6 +12,19 @@
 ![](img/physics_debug.png)<br>
 ![](img/car_debug.png)<br>
 
+### Tasks done so far
+- [x] Implement a basic Raycast Car
+- [x] Add a VR version
+- [x] Regroup the VR and normal version inside the same file
+- [x] Implement a road
+- [x] Test mesh collisions for turning roads
+- [x] Add a GUI
+- [x] Add a speed'o'meter
+- [x] Add a car and physics debug feature
+- [ ] Fix physics imprecision problems
+- [ ] Fix render triangles imprecision problems
+- [ ] Real road with a side environment
+
 ### First version of the Raycast Car
 
 ![](img/raycast_car_001.gif)
