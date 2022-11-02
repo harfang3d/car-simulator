@@ -1,3 +1,3 @@
 cd app
-bin\lua.exe main.lua
+python main.py
 pause
