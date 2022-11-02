@@ -19,11 +19,6 @@ To run the prototype:
 5. Run **1-build_assets.bat**.
 6. Run **2-run.bat** or **3-run_vr.bat**.
 
-After the compilation process finishes, you will see a `resources_compiled` folder next to the tutorials resources folder.
-
-You can now execute the prototype from the folder you unzipped it to.
-
-
 ### Screenshots of the actual version
 
 ![](img/car_interior.png)<br>
