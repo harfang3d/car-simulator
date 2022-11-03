@@ -28,6 +28,7 @@ To run the prototype:
 ### Tasks done so far
 - [x] Implement a basic Raycast Car
 - [x] Add a VR version
+- [x] Make the car controlable with a steering wheel and pedals
 - [x] Regroup the VR and normal version inside the same file
 - [x] Implement a road
 - [x] Test mesh collisions for turning roads
