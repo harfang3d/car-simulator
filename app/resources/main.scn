@@ -68,6 +68,18 @@
 		},
 		{
 			"name": "road_blocks/block_highway_turn_in/block_highway_turn_in.scn"
+		},
+		{
+			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
+		},
+		{
+			"name": "road_blocks/block_highway_turn_in/block_highway_turn_in.scn"
+		},
+		{
+			"name": "road_blocks/block_highway_turn_in/block_highway_turn_in.scn"
+		},
+		{
+			"name": "road_blocks/block_highway_turn_in/block_highway_turn_in.scn"
 		}
 	],
 	"key_values": null,
@@ -162,8 +174,60 @@
 				4294967295
 			],
 			"disabled": false,
-			"idx": 45,
+			"idx": 4,
 			"instance": 2,
+			"name": "block_highway_turn_in"
+		},
+		{
+			"components": [
+				7,
+				4294967295,
+				4294967295,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 19,
+			"instance": 5,
+			"name": "block_highway_turn_in"
+		},
+		{
+			"components": [
+				6,
+				4294967295,
+				4294967295,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 21,
+			"instance": 3,
+			"name": "block_highway_straight"
+		},
+		{
+			"components": [
+				8,
+				4294967295,
+				4294967295,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 24,
+			"instance": 6,
+			"name": "block_highway_turn_in"
+		},
+		{
+			"components": [
+				5,
+				4294967295,
+				4294967295,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 25,
+			"instance": 4,
 			"name": "block_highway_turn_in"
 		}
 	],
@@ -176,7 +240,7 @@
 				13.72885799407959
 			],
 			"rot": [
-				18.909645080566406,
+				18.909643173217773,
 				-122.79573059082031,
 				9.935133675753605e-07
 			],
@@ -256,6 +320,78 @@
 				1.0,
 				1.0,
 				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-386.29998779296875,
+				0.0,
+				-2499.85009765625
+			],
+			"rot": [
+				-0.0,
+				90.0,
+				0.0
+			],
+			"scl": [
+				0.9999995231628418,
+				1.0,
+				0.9999995231628418
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-3146.75,
+				0.0,
+				126.4000015258789
+			],
+			"rot": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-2760.0,
+				0.0,
+				2626.199951171875
+			],
+			"rot": [
+				0.0,
+				270.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-2886.300048828125,
+				0.0,
+				-2373.60009765625
+			],
+			"rot": [
+				-0.0,
+				179.99998474121094,
+				0.0
+			],
+			"scl": [
+				0.9999998211860657,
+				1.0,
+				0.9999998211860657
 			]
 		}
 	]

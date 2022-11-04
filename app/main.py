@@ -85,7 +85,7 @@ mat_ground = create_material(hg.Vec4(22/255, 42/255, 42/255, 1),hg.Vec4(1, 1, 0,
 
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
-car = CreateRCCar("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, 1000), hg.Vec3(0, 0, 0))
+car = CreateRCCar("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, -1000), hg.Vec3(0, 0, 0))
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
 
@@ -129,19 +129,23 @@ vr_calibrated = False
 physics_debug = False
 car_debug = False
 
-highway_turn_node = scene.GetNode("block_highway_turn_in")
-mesh_col = scene.CreateCollision()
-mesh_col.SetType(hg.CT_Mesh)
-mesh_col.SetCollisionResource("road_blocks/block_highway_turn_in/block_highway_turn_in_42.physics_bullet")
-mesh_col.SetMass(0)
-highway_turn_node.SetCollision(0, mesh_col)
-# create rigid body
-rb = scene.CreateRigidBody()
-rb.SetType(hg.RBT_Static)
-rb.SetFriction(0.498)
-rb.SetRollingFriction(0)
-highway_turn_node.SetRigidBody(rb)
-physics.NodeCreatePhysicsFromAssets(highway_turn_node)
+scene_nodes = scene.GetNodes()
+for node_idx in range(scene_nodes.size()):
+	node_name = scene_nodes.at(node_idx).GetName()
+	if node_name == "block_highway_turn_in":
+		highway_turn_node = scene_nodes.at(node_idx)
+		mesh_col = scene.CreateCollision()
+		mesh_col.SetType(hg.CT_Mesh)
+		mesh_col.SetCollisionResource("road_blocks/block_highway_turn_in/block_highway_turn_in_42.physics_bullet")
+		mesh_col.SetMass(0)
+		highway_turn_node.SetCollision(0, mesh_col)
+		# create rigid body
+		rb = scene.CreateRigidBody()
+		rb.SetType(hg.RBT_Static)
+		rb.SetFriction(0.498)
+		rb.SetRollingFriction(0)
+		highway_turn_node.SetRigidBody(rb)
+		physics.NodeCreatePhysicsFromAssets(highway_turn_node)
 
 while not keyboard.Pressed(hg.K_Escape):
 
