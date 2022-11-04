@@ -122,6 +122,7 @@ initial_head_matrix = hg.TransformationMat4(hg.Vec3(0, 0, 0), hg.Vec3(0, 0, 0))
 vr_calibrated = False
 physics_debug = False
 car_debug = False
+control_keyboard = False
 
 scene_nodes = scene.GetNodes()
 for node_idx in range(scene_nodes.size()):
@@ -151,7 +152,7 @@ while not keyboard.Pressed(hg.K_Escape):
 	dts = hg.time_to_sec_f(dt)
 
 	# Car updates
-	brake, reverse = CarModelControl(car, physics, keyboard, dts, steering_wheel, joystick)
+	brake, reverse = CarModelControl(car, physics, keyboard, dts, steering_wheel, joystick, control_keyboard)
 	car_vel, car_pos, car_lines, wheel_rays_debug = CarModelUpdate(car, scene, physics, dts)
 	CarLightsSetBrake(carlights, brake)
 	CarLightsSetReverse(carlights, reverse)
@@ -246,7 +247,7 @@ while not keyboard.Pressed(hg.K_Escape):
 	
 	if render_mode == "normal":
 		vid += 1
-		physics_debug, car_debug = DrawGui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car_debug)
+		physics_debug, car_debug, control_keyboard = DrawGui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car_debug, control_keyboard)
 
 	hg.Frame()
 	hg.UpdateWindow(win)    
