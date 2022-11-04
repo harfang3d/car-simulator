@@ -85,7 +85,7 @@ mat_ground = create_material(hg.Vec4(22/255, 42/255, 42/255, 1),hg.Vec4(1, 1, 0,
 
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
-car = CreateRCCar("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, -1000), hg.Vec3(0, 0, 0))
+car = CreateCar("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, -1000), hg.Vec3(0, 0, 0))
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
 
@@ -165,8 +165,8 @@ while not keyboard.Pressed(hg.K_Escape):
 
 
 	# Car updates
-	brake, reverse = RCCarControl(car, physics, keyboard, dts, steering_wheel, joystick)
-	car_vel, car_pos, car_lines = RCCarUpdate(car, scene, physics, dts)
+	brake, reverse = CarControl(car, physics, keyboard, dts, steering_wheel, joystick)
+	car_vel, car_pos, car_lines = CarUpdate(car, scene, physics, dts)
 	CarLightsSetBrake(carlights, brake)
 	CarLightsSetReverse(carlights, reverse)
 	CarLightsUpdate(carlights, scene, dt)
