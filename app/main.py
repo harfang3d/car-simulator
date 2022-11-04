@@ -152,7 +152,7 @@ while not keyboard.Pressed(hg.K_Escape):
 
 	# Car updates
 	brake, reverse = CarModelControl(car, physics, keyboard, dts, steering_wheel, joystick)
-	car_vel, car_pos, car_lines = CarModelUpdate(car, scene, physics, dts)
+	car_vel, car_pos, car_lines, wheel_rays_debug = CarModelUpdate(car, scene, physics, dts)
 	CarLightsSetBrake(carlights, brake)
 	CarLightsSetReverse(carlights, reverse)
 	CarLightsUpdate(carlights, scene, dt)
@@ -181,6 +181,15 @@ while not keyboard.Pressed(hg.K_Escape):
 			opaque_view_id = hg.GetSceneForwardPipelinePassViewId(passId, hg.SFPP_Opaque)
 			for line in car_lines:
 				DrawLine(line[0], line[1], line[2], opaque_view_id, vtx_line_layout, lines_program)
+			for i in range(4):
+				hit_ground = wheel_rays_debug['ground_hits'][i]
+				ray_pos = wheel_rays_debug['car_matrix'] * wheel_rays_debug['rays'][i]
+				if hit_ground:
+					ground_impact_pos = wheel_rays_debug['ground_impacts'][i].P
+					DrawLine(ray_pos, ground_impact_pos, hg.Color.Green, opaque_view_id, vtx_line_layout, lines_program)
+				else:
+					line_end_pos = wheel_rays_debug['ray_dir'] * wheel_rays_debug['ray_max_dist'] + ray_pos
+					DrawLine(ray_pos, line_end_pos, hg.Color.Red, opaque_view_id, vtx_line_layout, lines_program)
 
 	# EoF
 	if render_mode == "vr":
