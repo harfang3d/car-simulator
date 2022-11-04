@@ -5,9 +5,6 @@ def CarLightsCreate(instance_node_name, scene):
         print("!CarLightsCreate(): Instance node '" + instance_node_name + "' not found!")
         return
 
-    # carlights
-    # carlight_reverse, carlight_head_light, carlight_day_light, carlight_brake, carlight_backLight, carlight_turn_left, carlight_turn_right
-
     scene_view = o['instance_node'].GetInstanceSceneView()
     root_node = scene_view.GetNode(scene, "carlights")
     if not root_node.IsValid():
