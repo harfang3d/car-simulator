@@ -65,7 +65,7 @@ ground_mdl = hg.CreateCubeModel(vs_decl, 150, 0.01, 150)
 ground_ref = res.AddModel('ground', ground_mdl)
 prg_ref = hg.LoadPipelineProgramRefFromAssets('core/shader/pbr.hps', res, hg.GetForwardPipelineInfo())
 
-def create_material(ubc, orm):
+def CreateMaterial(ubc, orm):
 	mat = hg.Material()
 	hg.SetMaterialProgram(mat, prg_ref)
 	hg.SetMaterialValue(mat, "uBaseOpacityColor", ubc)
@@ -73,19 +73,13 @@ def create_material(ubc, orm):
 	return mat
 
 
-mat_ground = create_material(hg.Vec4(22/255, 42/255, 42/255, 1),hg.Vec4(1, 1, 0, 1))
-
-# cube_node = hg.CreatePhysicCube(scene, hg.Vec3(10,10,10), hg.TransformationMat4(hg.Vec3(0, -2.5, -10),hg.Deg3(30, 0, 10)), cube_ref, [mat_ground], 0)
-# ground_node = hg.CreatePhysicCube(scene, hg.Vec3(150, 0.01, 150), hg.TranslationMat4(hg.Vec3(0, -0.005, 50)), ground_ref, [mat_ground], 0)
-
-# cube_node.GetRigidBody().SetType(hg.RBT_Kinematic)
-# ground_node.GetRigidBody().SetType(hg.RBT_Kinematic)
+mat_ground = CreateMaterial(hg.Vec4(22/255, 42/255, 42/255, 1),hg.Vec4(1, 1, 0, 1))
 
 # Scene physics
 
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
-car = CreateCar("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, -1000), hg.Vec3(0, 0, 0))
+car = CarModelCreate("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, -1000), hg.Vec3(0, 0, 0))
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
 
@@ -153,20 +147,12 @@ while not keyboard.Pressed(hg.K_Escape):
 	mouse.Update()
 	joystick.Update()
 
-	# for i in range(joystick.ButtonsCount()):
-	# 	if joystick.Down(i):
-	# 		print(i)
-
-	# for i in range(joystick.AxesCount()):
-	# 	print(joystick.Axes(i))
-
 	dt = hg.TickClock()
 	dts = hg.time_to_sec_f(dt)
 
-
 	# Car updates
-	brake, reverse = CarControl(car, physics, keyboard, dts, steering_wheel, joystick)
-	car_vel, car_pos, car_lines = CarUpdate(car, scene, physics, dts)
+	brake, reverse = CarModelControl(car, physics, keyboard, dts, steering_wheel, joystick)
+	car_vel, car_pos, car_lines = CarModelUpdate(car, scene, physics, dts)
 	CarLightsSetBrake(carlights, brake)
 	CarLightsSetReverse(carlights, reverse)
 	CarLightsUpdate(carlights, scene, dt)
@@ -194,7 +180,7 @@ while not keyboard.Pressed(hg.K_Escape):
 		if car_debug:
 			opaque_view_id = hg.GetSceneForwardPipelinePassViewId(passId, hg.SFPP_Opaque)
 			for line in car_lines:
-				draw_line(line[0], line[1], line[2], opaque_view_id, vtx_line_layout, lines_program)
+				DrawLine(line[0], line[1], line[2], opaque_view_id, vtx_line_layout, lines_program)
 
 	# EoF
 	if render_mode == "vr":
@@ -251,7 +237,7 @@ while not keyboard.Pressed(hg.K_Escape):
 	
 	if render_mode == "normal":
 		vid += 1
-		physics_debug, car_debug = draw_gui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car_debug)
+		physics_debug, car_debug = DrawGui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car_debug)
 
 	hg.Frame()
 	hg.UpdateWindow(win)    

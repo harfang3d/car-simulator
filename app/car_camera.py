@@ -20,7 +20,6 @@ def CarCameraCreate(instance_node_name, scene):
 		_n = o['scene_view'].GetNode(scene, camera_name)
 		_f = hg.Normalize(hg.GetZ(_n.GetTransform().GetWorld()))
 		_p = _n.GetTransform().GetPos()
-		# table.insert(o.camera_list, {node = _n, trs = _n:GetTransform(), vec_front = _f, pos = _p})
 		o['camera_list'].append({'node' : _n, 'trs' : _n.GetTransform(), 'vec_front' : _f, 'pos' : _p})
 
 	o['current_camera'] = 0
@@ -40,7 +39,7 @@ def CarCameraUpdate(o, scene, kb, dt, car_velocity, render_mode):
 	# simulate head inertia
 	if render_mode == "normal":
 		_p = o['camera_list'][o['current_camera']]['pos']
-		_f = clamp(Map(hg.Len(car_velocity), -20.0, 20.0, 0.0, 1.0), 0.0, 1.0)
+		_f = Clamp(Map(hg.Len(car_velocity), -20.0, 20.0, 0.0, 1.0), 0.0, 1.0)
 		_f = EaseInOutQuick(_f)
 		_f = Map(_f, 0.0, 1.0, -0.1, 0.1)
 		_p = _p + o['camera_list'][o['current_camera']]['vec_front'] * _f

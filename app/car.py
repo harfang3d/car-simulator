@@ -1,8 +1,8 @@
 import harfang as hg
 from math import sqrt
-from utils import range_adjust, metersPerSecondToKMH
+from utils import RangeAdjust, MetersPerSecondToKMH
 
-def CreateCar(name, instance_node_name, scene, scene_physics, resources, start_position, start_rotation):
+def CarModelCreate(name, instance_node_name, scene, scene_physics, resources, start_position, start_rotation):
 	o = {}
 	o['start_position'] = start_position
 	o['start_rotation'] = start_rotation
@@ -63,22 +63,6 @@ def CreateCar(name, instance_node_name, scene, scene_physics, resources, start_p
 
 	o['front_angle'] = 0
 
-	# Setup physics
-
-	# o['chassis_rigid'] = scene.CreateRigidBody()
-	# o['chassis_rigid'].SetType(hg.RBT_Dynamic)
-	# o['chassis_node'].SetRigidBody(o['chassis_rigid'])
-	# colbox = scene.CreateCollision()
-	# colbox.SetType(hg.CT_Cube)
-	# colbox.SetSize(hg.Vec3(1, 0.5, 3))
-	# colbox.SetMass(o['mass'])
-	# colbox.SetLocalTransform(hg.TransformationMat4(
-	# 	hg.Vec3(0, 0, 0), hg.Deg3(0, 0, 0)))
-	# o['chassis_node'].SetCollision(1, colbox)
-	# o['chassis_rigid'].SetAngularDamping(0)
-	# o['chassis_rigid'].SetLinearDamping(0)
-	# scene_physics.NodeCreatePhysicsFromAssets(o['chassis_node'])
-
 	# Get wheels rays
 
 	o['local_rays'] = []
@@ -88,21 +72,21 @@ def CreateCar(name, instance_node_name, scene, scene_physics, resources, start_p
 	return o
 
 
-def CarReset(rccar, scene_physics):
+def CarModelReset(rccar, scene_physics):
 	scene_physics.NodeResetWorld(rccar['chassis_node'], hg.TransformationMat4(
 		rccar['start_position'], rccar['start_rotation']))
 
 
-def CarSteering(rccar, angle, steering_wheel):
+def CarModelForceSteering(rccar, angle, steering_wheel):
 	if angle > 0.01:
-		rccar['front_angle'] = range_adjust(angle, 0.3, 1, 0, rccar['front_angle_max'])
+		rccar['front_angle'] = RangeAdjust(angle, 0.3, 1, 0, rccar['front_angle_max'])
 		rccar['thrust'].GetTransform().SetRot(
 			hg.Deg3(0, rccar['front_angle'], 0))
 		steering_wheel_rot = steering_wheel.GetTransform().GetRot()
 		steering_wheel.GetTransform().SetRot(hg.Deg3(steering_wheel_rot.x, 180 -
 													 rccar['front_angle'] * 3, steering_wheel_rot.z))
 	elif angle < -0.01:
-		rccar['front_angle'] = range_adjust(angle, -0.3, -1, 0, -rccar['front_angle_max'])
+		rccar['front_angle'] = RangeAdjust(angle, -0.3, -1, 0, -rccar['front_angle_max'])
 		rccar['thrust'].GetTransform().SetRot(
 			hg.Deg3(0, rccar['front_angle'], 0))
 		steering_wheel_rot = steering_wheel.GetTransform().GetRot()
@@ -110,7 +94,7 @@ def CarSteering(rccar, angle, steering_wheel):
 													 rccar['front_angle'] * 3, steering_wheel_rot.z))
 
 
-def CarAccelerate(rccar, value, scene_physics):
+def CarModelApplyAcceleration(rccar, value, scene_physics):
 	f = 0
 	for i in range(2):
 		if rccar['ground_hits'][i]:
@@ -119,9 +103,9 @@ def CarAccelerate(rccar, value, scene_physics):
 	pos = hg.GetT(rccar['thrust'].GetTransform().GetWorld())
 	dir = hg.GetZ(rccar['thrust'].GetTransform().GetWorld())
 	v = scene_physics.NodeGetLinearVelocity(rccar['chassis_node'])
-	v_kmh = metersPerSecondToKMH(hg.Len(v))
+	v_kmh = MetersPerSecondToKMH(hg.Len(v))
 	if v_kmh > (0.9 * rccar['max_speed']):
-		adjusted_accel = range_adjust(v_kmh, 0.9 * rccar['max_speed'], rccar['max_speed'], 1, 0)
+		adjusted_accel = RangeAdjust(v_kmh, 0.9 * rccar['max_speed'], rccar['max_speed'], 1, 0)
 		scene_physics.NodeAddImpulse(
 			rccar['chassis_node'], dir * f * value * (1/60) * adjusted_accel, pos)
 	else:
@@ -129,7 +113,7 @@ def CarAccelerate(rccar, value, scene_physics):
 			rccar['chassis_node'], dir * f * value * (1/60), pos)
 
 
-def CarBrake(rccar, value, scene_physics):
+def CarModelApplyBrake(rccar, value, scene_physics):
 	f = 0
 	for i in range(4):
 		if rccar['ground_hits'][i]:
@@ -142,13 +126,13 @@ def CarBrake(rccar, value, scene_physics):
 		rccar['chassis_node'], hg.Normalize(v) * (1 / 60) * f * -value, pos)
 
 
-def CarUpdate(rccar, scene, scene_physics, dts):
+def CarModelUpdate(rccar, scene, scene_physics, dts):
 	scene_physics.NodeWake(rccar['chassis_node'])
 	rccar['ray_dir'] = hg.Reverse(
 		hg.GetY(rccar['chassis_node'].GetTransform().GetWorld()))
 
 	for i in range(4):
-		CarUpdateWheel(rccar, scene, scene_physics, i, dts)
+		CarModelUpdateWheel(rccar, scene, scene_physics, i, dts)
 	
 	car_velocity = scene_physics.NodeGetLinearVelocity(rccar['chassis_node'])
 	car_world = rccar['chassis_node'].GetTransform().GetWorld()
@@ -158,7 +142,7 @@ def CarUpdate(rccar, scene, scene_physics, dts):
 	return car_velocity, car_pos, car_lines
 
 
-def CarUpdateWheel(rccar, scene, scene_physics, id, dts):
+def CarModelUpdateWheel(rccar, scene, scene_physics, id, dts):
 
 	wheel = rccar['wheels'][id]
 	mat = rccar['chassis_node'].GetTransform(
@@ -227,26 +211,26 @@ def CarUpdateWheel(rccar, scene, scene_physics, id, dts):
 	wheel.GetTransform().SetRot(rot)
 
 
-def CarGetParentNode(rccar):
+def CarModelGetParentNode(rccar):
 	return rccar['chassis_node']
 
 
-def CarControl(rccar, scene_physics, kb, dts, steering_wheel, joystick):
+def CarModelControl(rccar, scene_physics, kb, dts, steering_wheel, joystick):
 	brake = reverse = False
 	if joystick.Down(7) or kb.Down(hg.K_Up):
-		CarAccelerate(rccar,  rccar['thrust_power'] * dts, scene_physics)
+		CarModelApplyAcceleration(rccar,  rccar['thrust_power'] * dts, scene_physics)
 
 	if kb.Down(hg.K_Down):
-		CarAccelerate(rccar, -rccar['thrust_power'] * dts, scene_physics)
+		CarModelApplyAcceleration(rccar, -rccar['thrust_power'] * dts, scene_physics)
 		reverse = True
 
 	if joystick.Down(6) or kb.Down(hg.K_Space):
-		CarBrake(rccar, rccar['brakes_power'] * dts, scene_physics)
+		CarModelApplyBrake(rccar, rccar['brakes_power'] * dts, scene_physics)
 		brake = True
 
-	CarSteering(rccar, joystick.Axes(0), steering_wheel)
+	CarModelForceSteering(rccar, joystick.Axes(0), steering_wheel)
 
 	if kb.Pressed(hg.K_Backspace):
-		CarReset(rccar, scene_physics)
+		CarModelReset(rccar, scene_physics)
 
 	return brake, reverse
