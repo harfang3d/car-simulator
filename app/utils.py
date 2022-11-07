@@ -1,3 +1,5 @@
+import harfang as hg
+
 def Clamp(val, low1, high1):
 	return min(max(val, low1), high1)
 
@@ -16,3 +18,24 @@ def MetersPerSecondToKMH(meterspersecond):
 
 def KMHtoMPS(kmh):
 	return kmh / 3.6
+
+
+def NodeGetPhysicsMass(node):
+    n = node.GetCollisionCount()
+    mass = 0
+    for i in range(n):
+        col = node.GetCollision(i)
+        mass = mass + col.GetMass()
+
+    return mass
+
+def NodeGetPhysicsCenterOfMass(node):
+    mass = NodeGetPhysicsMass(node)
+    n = node.GetCollisionCount()
+    center_of_mass = hg.Vec3(0,0,0)
+    for i in range(n):
+        col = node.GetCollision(i)
+        mass_ratio = col.GetMass() / mass
+        center_of_mass = center_of_mass + (hg.GetTranslation(col.GetLocalTransform()) * mass_ratio)
+
+    return center_of_mass

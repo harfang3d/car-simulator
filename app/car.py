@@ -1,6 +1,6 @@
 import harfang as hg
 from math import sqrt
-from utils import RangeAdjust, MetersPerSecondToKMH
+from utils import RangeAdjust, MetersPerSecondToKMH, NodeGetPhysicsMass, NodeGetPhysicsCenterOfMass
 
 
 def CarModelCreate(name, instance_node_name, scene, scene_physics, resources, start_position, start_rotation):
@@ -50,7 +50,8 @@ def CarModelCreate(name, instance_node_name, scene, scene_physics, resources, st
 
 	# Constants
 
-	o['mass'] = 1000
+	o['mass'] = NodeGetPhysicsMass(o['chassis_node'])
+	o['center_of_mass'] = NodeGetPhysicsCenterOfMass(o['chassis_node'])
 	o['spring_friction'] = 2500
 	o['tires_reaction'] = 25
 	o['tires_grip'] = 5000
@@ -145,7 +146,7 @@ def CarModelUpdate(rccar, scene, scene_physics, dts):
 
 	car_velocity = scene_physics.NodeGetLinearVelocity(rccar['chassis_node'])
 	car_world = rccar['chassis_node'].GetTransform().GetWorld()
-	car_pos = hg.GetT(car_world)
+	car_pos = car_world * rccar['center_of_mass']
 	car_lines = [[car_pos + hg.GetX(car_world) * 2, car_pos - hg.GetX(car_world) * 2, hg.Color.Red], [car_pos + hg.GetY(car_world) * 2,
 																									  car_pos - hg.GetY(car_world) * 2, hg.Color.Green], [car_pos + hg.GetZ(car_world) * 2, car_pos - hg.GetZ(car_world) * 2, hg.Color.Blue]]
 	wheel_rays_debug = {"car_matrix": rccar['chassis_node'].GetTransform(
