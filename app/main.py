@@ -1,9 +1,10 @@
-# HARFANG® 3D - www.harfang3d.com - Raycast Car demo sample
+# HARFANG® 3D - www.harfang3d.com - Raycast Car with VR Simulator
 import harfang as hg
 from car import *
 from car_camera import *
 from car_lights import *
 from gui import *
+from car_spawner import *
 import sys
 
 render_mode = "normal"
@@ -79,7 +80,10 @@ mat_ground = CreateMaterial(hg.Vec4(22/255, 42/255, 42/255, 1),hg.Vec4(1, 1, 0, 
 
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
-car = CarModelCreate("Generic Car", "car", scene, physics, res, hg.Vec3(-10, 1.5, -1000), hg.Vec3(0, 0, 0))
+car = CarModelCreate("Generic Car", "car", scene, physics, res, hg.Vec3(5, 1.5, 0), hg.Vec3(0, 0, 0))
+second_car = CreateNewCar(scene, res, hg.Vec3(3.5, 1, 10))
+third_car = CreateNewCar(scene, res, hg.Vec3(7.5, 1, 20))
+
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
 
@@ -158,6 +162,9 @@ while not keyboard.Pressed(hg.K_Escape):
 	CarLightsSetReverse(carlights, reverse)
 	CarLightsUpdate(carlights, scene, dt)
 	current_camera_node, camera_update = CarCameraUpdate(car_camera, scene, keyboard, dt, car_vel, render_mode)
+	HandleCarMovement(second_car, physics)
+	HandleCarMovement(third_car, physics)
+
 
 	# Scene updates
 	vid = 0  # keep track of the next free view id
