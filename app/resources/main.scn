@@ -80,6 +80,9 @@
 		},
 		{
 			"name": "road_blocks/block_highway_turn_in/block_highway_turn_in.scn"
+		},
+		{
+			"name": "road_blocks/block_highway_straight/block_highway_straight.scn"
 		}
 	],
 	"key_values": null,
@@ -187,7 +190,7 @@
 				4294967295
 			],
 			"disabled": false,
-			"idx": 19,
+			"idx": 5,
 			"instance": 5,
 			"name": "block_highway_turn_in"
 		},
@@ -200,7 +203,7 @@
 				4294967295
 			],
 			"disabled": false,
-			"idx": 21,
+			"idx": 6,
 			"instance": 3,
 			"name": "block_highway_straight"
 		},
@@ -213,7 +216,7 @@
 				4294967295
 			],
 			"disabled": false,
-			"idx": 24,
+			"idx": 7,
 			"instance": 6,
 			"name": "block_highway_turn_in"
 		},
@@ -226,9 +229,22 @@
 				4294967295
 			],
 			"disabled": false,
-			"idx": 25,
+			"idx": 8,
 			"instance": 4,
 			"name": "block_highway_turn_in"
+		},
+		{
+			"components": [
+				9,
+				4294967295,
+				4294967295,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 36,
+			"instance": 7,
+			"name": "block_highway_straight"
 		}
 	],
 	"transforms": [
@@ -385,13 +401,31 @@
 			],
 			"rot": [
 				-0.0,
-				179.99998474121094,
+				179.99996948242188,
 				0.0
 			],
 			"scl": [
 				0.9999998211860657,
 				1.0,
 				0.9999998211860657
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				0.0,
+				0.0,
+				-20000.0
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
 			]
 		}
 	]
