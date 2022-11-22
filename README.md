@@ -35,7 +35,7 @@ To run the prototype:
 - [x] Add a GUI
 - [x] Add a speed'o'meter
 - [x] Add a car and physics debug feature
-- [ ] Create a tool to convert .nms tracks to JSON
+- [x] Create a tool to convert .nms tracks to JSON
 - [ ] Fix physics imprecision problems
 - [ ] Fix render triangles imprecision problems
 - [ ] Real road with a side environment
