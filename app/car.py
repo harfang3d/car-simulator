@@ -58,7 +58,7 @@ def CarModelCreate(name, instance_node_name, scene, scene_physics, resources, st
 	o['steering_angle_max'] = 45
 	o['thrust_power'] = 400000  # Acceleration
 	o['brakes_power'] = 1000000
-	o['steering_speed'] = 150
+	o['steering_speed'] = 50
 	o['max_speed'] = 130
 
 	# Variables
@@ -97,10 +97,13 @@ def CarModelForceSteering(rccar, angle, steering_wheel):
 		steering_wheel.GetTransform().SetRot(hg.Deg3(steering_wheel_rot.x, 180 -
 													 rccar['steering_angle'] * 3, steering_wheel_rot.z))
 
-def CarModelIncreaseSteering(car_model, angle):
+def CarModelIncreaseSteering(car_model, angle, steering_wheel):
 	car_model['steering_angle'] = max(min(car_model['steering_angle'] + angle, car_model['steering_angle_max']), -car_model['steering_angle_max'])
 	car_model['thrust'].GetTransform().SetRot(
 			hg.Deg3(0, car_model['steering_angle'], 0))
+	steering_wheel_rot = steering_wheel.GetTransform().GetRot()
+	steering_wheel.GetTransform().SetRot(hg.Deg3(steering_wheel_rot.x, 180 -
+				car_model['steering_angle'] * 3, steering_wheel_rot.z))
 
 
 def CarModelApplyAcceleration(rccar, value, scene_physics):
@@ -245,9 +248,9 @@ def CarModelControl(rccar, scene_physics, kb, dts, steering_wheel, joystick, con
 
 	if control_keyboard:
 		if kb.Down(hg.K_Left):
-			CarModelIncreaseSteering(rccar, -rccar['steering_speed'] * dts)
+			CarModelIncreaseSteering(rccar, -rccar['steering_speed'] * dts, steering_wheel)
 		if kb.Down(hg.K_Right):
-			CarModelIncreaseSteering(rccar, rccar['steering_speed'] * dts)
+			CarModelIncreaseSteering(rccar, rccar['steering_speed'] * dts, steering_wheel)
 
 	else:
 		CarModelForceSteering(rccar, joystick.Axes(0), steering_wheel)
