@@ -127,6 +127,7 @@ vr_calibrated = False
 physics_debug = False
 car_debug = False
 control_keyboard = False
+track_data = GetBlockTracks()
 
 scene_nodes = scene.GetNodes()
 for node_idx in range(scene_nodes.size()):
