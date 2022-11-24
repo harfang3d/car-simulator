@@ -80,9 +80,7 @@ mat_ground = CreateMaterial(hg.Vec4(22/255, 42/255, 42/255, 1),hg.Vec4(1, 1, 0, 
 
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
-car = CarModelCreate("Generic Car", "car", scene, physics, res, hg.Vec3(5, 1.5, 0), hg.Vec3(0, 0, 0))
-second_car = CreateNewCar(scene, res, hg.Vec3(3.5, 1, 10))
-third_car = CreateNewCar(scene, res, hg.Vec3(7.5, 1, 20))
+car = CarModelCreate("Generic Car", "car", scene, physics, res, hg.Vec3(5, 1.5, 1000), hg.Vec3(0, 0, 0))
 
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
@@ -127,7 +125,10 @@ vr_calibrated = False
 physics_debug = False
 car_debug = False
 control_keyboard = False
+track_visualization = False
 track_data = GetBlockTracks()
+nodes_track_data = GetTrackDataByNode(scene, track_data)
+spawned_cars = []
 
 scene_nodes = scene.GetNodes()
 for node_idx in range(scene_nodes.size()):
@@ -163,9 +164,7 @@ while not keyboard.Pressed(hg.K_Escape):
 	CarLightsSetReverse(carlights, reverse)
 	CarLightsUpdate(carlights, scene, dt)
 	current_camera_node, camera_update = CarCameraUpdate(car_camera, scene, keyboard, dt, car_vel, render_mode)
-	HandleCarMovement(second_car, physics)
-	HandleCarMovement(third_car, physics)
-
+	spawned_cars = HandleFakeCars(scene, res, nodes_track_data, car_pos, spawned_cars)
 
 	# Scene updates
 	vid = 0  # keep track of the next free view id
@@ -185,9 +184,9 @@ while not keyboard.Pressed(hg.K_Escape):
 			hg.SetViewTransform(vid, view_matrix, projection_matrix)
 			rs = hg.ComputeRenderState(hg.BM_Opaque, hg.DT_Disabled, hg.FC_Disabled)
 			physics.RenderCollision(vid, vtx_lines, lines_program, rs, 0)
-
+   
+		opaque_view_id = hg.GetSceneForwardPipelinePassViewId(passId, hg.SFPP_Opaque)
 		if car_debug:
-			opaque_view_id = hg.GetSceneForwardPipelinePassViewId(passId, hg.SFPP_Opaque)
 			for line in car_lines:
 				DrawLine(line[0], line[1], line[2], opaque_view_id, vtx_line_layout, lines_program)
 			for i in range(4):
@@ -199,6 +198,22 @@ while not keyboard.Pressed(hg.K_Escape):
 				else:
 					line_end_pos = wheel_rays_debug['ray_dir'] * wheel_rays_debug['ray_max_dist'] + ray_pos
 					DrawLine(ray_pos, line_end_pos, hg.Color.Red, opaque_view_id, vtx_line_layout, lines_program)
+		
+		if track_visualization:
+			closest_node = None
+			closest_node_data = None
+	
+			for nodes_data in nodes_track_data:
+				node = nodes_data['node']
+				if not closest_node:
+					closest_node = node
+					closest_node_data = nodes_data
+				else:
+					if hg.Dist(car_pos, node.GetTransform().GetPos()) < hg.Dist(car_pos, closest_node.GetTransform().GetPos()):
+						closest_node = node
+						closest_node_data = nodes_data
+	
+			DrawTrackData(closest_node_data, opaque_view_id, vtx_line_layout, lines_program)
 
 	# EoF
 	if render_mode == "vr":
@@ -255,7 +270,7 @@ while not keyboard.Pressed(hg.K_Escape):
 	
 	if render_mode == "normal":
 		vid += 1
-		physics_debug, car_debug, control_keyboard = DrawGui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car_debug, control_keyboard)
+		physics_debug, car_debug, control_keyboard, track_visualization = DrawGui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car_debug, control_keyboard, track_visualization)
 
 	hg.Frame()
 	hg.UpdateWindow(win)    
