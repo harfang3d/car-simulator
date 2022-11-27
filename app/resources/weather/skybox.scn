@@ -78,6 +78,13 @@
 					"face_culling": "ccw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "common_maps/uv_mapper.png",
+							"stage": 0
+						}
+					],
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
