@@ -1,11 +1,12 @@
 import harfang as hg
 from utils import MetersPerSecondToKMH
 
-def DrawGui(res_x, res_y, dt, dts, car_vel, vid, debug_physic, car_pos, debug_car, control_keyboard):
+def DrawGui(res_x, res_y, dt, dts, car_vel, vid, debug_physic, car_pos, car_mass, debug_car, control_keyboard):
 	hg.ImGuiBeginFrame(res_x, res_y, dt, hg.ReadMouse(), hg.ReadKeyboard())
 	hg.ImGuiBegin("Debug", True, hg.ImGuiWindowFlags_NoMove | hg.ImGuiWindowFlags_NoResize)
 	hg.ImGuiSetWindowSize("Debug", hg.Vec2(350, 180), hg.ImGuiCond_Once)
 	hg.ImGuiText("dt = " + str(round(dts, 4)))
+	hg.ImGuiText("car_mass = " + str(car_mass) + "Kg")
 	hg.ImGuiText("speed = " + str(round(MetersPerSecondToKMH(hg.Len(car_vel)))) + " km/h")
 	hg.ImGuiText("car position = Vec3(" + str(round(car_pos.x, 4)) + ", " + str(round(car_pos.y, 4)) + ", " + str(round(car_pos.z, 4)) + ")")
 	was_clicked, debug_physic = hg.ImGuiCheckbox('Physic Debug', debug_physic)

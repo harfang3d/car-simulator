@@ -255,7 +255,7 @@ while not keyboard.Pressed(hg.K_Escape):
 	
 	if render_mode == "normal":
 		vid += 1
-		physics_debug, car_debug, control_keyboard = DrawGui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car_debug, control_keyboard)
+		physics_debug, car_debug, control_keyboard = DrawGui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car['mass'], car_debug, control_keyboard)
 
 	hg.Frame()
 	hg.UpdateWindow(win)    

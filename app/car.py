@@ -52,10 +52,10 @@ def CarModelCreate(name, instance_node_name, scene, scene_physics, resources, st
 
 	o['mass'] = NodeGetPhysicsMass(o['chassis_node'])
 	o['center_of_mass'] = NodeGetPhysicsCenterOfMass(o['chassis_node'])
-	o['spring_friction'] = 2500
+	o['spring_friction'] = 2500 * 2.5
 	o['tires_reaction'] = 25
-	o['tires_grip'] = 5000
-	o['steering_angle_max'] = 45
+	o['tires_grip'] = 10000
+	o['steering_angle_max'] = 25
 	o['thrust_power'] = 400000  # Acceleration
 	o['brakes_power'] = 1000000
 	o['steering_speed'] = 50
