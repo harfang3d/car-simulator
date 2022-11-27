@@ -57,6 +57,9 @@ lines_program = hg.LoadProgramFromAssets("shaders/pos_rgb")
 scene = hg.Scene()
 hg.LoadSceneFromAssets("main.scn", scene, res, hg.GetForwardPipelineInfo())
 
+scene_skybox = hg.Scene()
+hg.LoadSceneFromAssets("weather/skybox.scn", scene, res, hg.GetForwardPipelineInfo())
+
 # Ground
 
 vs_decl= hg.VertexLayoutPosFloatNormUInt8()
@@ -106,12 +109,14 @@ quad_uniform_set_texture_list = hg.UniformSetTextureList()
 
 
 # Car camera
-
 car_camera = CarCameraCreate("car", scene)
 steering_wheel = scene.GetNode("steering_wheel")
 default_camera = scene.GetNode("Camera")
-# Inputs
 
+camera_skybox = hg.CreateCamera(scene_skybox, hg.TransformationMat4(hg.Vec3(0, 0, 0), hg.Vec3(0, 0, 0)), 1.0, 1000.0)
+scene_skybox.SetCurrentCamera(camera_skybox)
+
+# Inputs
 keyboard = hg.Keyboard()
 mouse = hg.Mouse()
 joystick = hg.Joystick()
@@ -169,13 +174,25 @@ while not keyboard.Pressed(hg.K_Escape):
 	# Scene updates
 	vid = 0  # keep track of the next free view id
 	passId = hg.SceneForwardPipelinePassViewId()
+
+	# skybox
+	scene_skybox.Update(dt)
+	camera_skybox.GetTransform().SetPos(hg.Vec3(0,0,0))
+	camera_skybox.GetTransform().SetRot(scene.GetCurrentCamera().GetTransform().GetRot())
+
+	if render_mode == "normal":
+		hg.SetViewClear(vid, 0, 0, 1.0, 0)
+		hg.SetViewRect(vid, 0, 0, res_x, res_y)
+		vid, passId = hg.SubmitSceneToPipeline(vid, scene_skybox, hg.IntRect(0, 0, res_x, res_y), True, pipeline, res)
+
+	# main landscape
 	hg.SceneUpdateSystems(scene, clocks, dt, physics, hg.time_from_sec_f(1/60), 3)
 	if render_mode == "normal":
-		vid, passId = hg.SubmitSceneToPipeline(0, scene, hg.IntRect(0, 0, res_x, res_y), True, pipeline, res)
+		vid, passId = hg.SubmitSceneToPipeline(vid, scene, hg.IntRect(0, 0, res_x, res_y), True, pipeline, res)
 
 		if physics_debug:
 			# Debug physics
-			hg.SetViewClear(vid, 0, 0, 1.0, 0)
+#			hg.SetViewClear(vid, 0, 0, 1.0, 0)
 			hg.SetViewRect(vid, 0, 0, res_x, res_y)
 			cam_mat = scene.GetCurrentCamera().GetTransform().GetWorld()
 			view_matrix = hg.InverseFast(cam_mat)
