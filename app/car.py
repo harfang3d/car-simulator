@@ -58,7 +58,7 @@ def CarModelCreate(name, instance_node_name, scene, scene_physics, resources, st
 	o['steering_angle_max'] = 25
 	o['thrust_power'] = 400000  # Acceleration
 	o['brakes_power'] = 1000000
-	o['steering_speed'] = 50
+	o['steering_speed'] = 25
 	o['max_speed'] = 130
 
 	# Variables

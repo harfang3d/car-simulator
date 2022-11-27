@@ -435,7 +435,6 @@
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "common_maps/spec_grass.png",
 							"stage": 1
 						}
 					],
@@ -454,9 +453,9 @@
 							"name": "uOcclusionRoughnessMetalnessColor",
 							"type": "vec4",
 							"value": [
-								1.0,
-								0.5,
-								0.25,
+								0.37599998712539673,
+								0.7900000214576721,
+								0.10199999809265137,
 								0.0
 							]
 						},
