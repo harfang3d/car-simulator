@@ -11,7 +11,7 @@
 		}
 	],
 	"canvas": {
-		"clear_color": true,
+		"clear_color": false,
 		"clear_z": true,
 		"color": [
 			0,
@@ -242,7 +242,7 @@
 				4294967295
 			],
 			"disabled": false,
-			"idx": 36,
+			"idx": 9,
 			"instance": 7,
 			"name": "block_highway_straight"
 		}
@@ -401,7 +401,7 @@
 			],
 			"rot": [
 				-0.0,
-				179.99996948242188,
+				179.9999542236328,
 				0.0
 			],
 			"scl": [

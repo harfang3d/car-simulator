@@ -58,7 +58,7 @@ scene = hg.Scene()
 hg.LoadSceneFromAssets("main.scn", scene, res, hg.GetForwardPipelineInfo())
 
 scene_skybox = hg.Scene()
-hg.LoadSceneFromAssets("weather/skybox.scn", scene, res, hg.GetForwardPipelineInfo())
+hg.LoadSceneFromAssets("weather/skybox.scn", scene_skybox, res, hg.GetForwardPipelineInfo())
 
 # Ground
 
@@ -113,7 +113,7 @@ car_camera = CarCameraCreate("car", scene)
 steering_wheel = scene.GetNode("steering_wheel")
 default_camera = scene.GetNode("Camera")
 
-camera_skybox = hg.CreateCamera(scene_skybox, hg.TransformationMat4(hg.Vec3(0, 0, 0), hg.Vec3(0, 0, 0)), 1.0, 1000.0)
+camera_skybox = hg.CreateCamera(scene_skybox, hg.TransformationMat4(hg.Vec3(0, 0, 0), hg.Vec3(0, 0, 0)), 1.0, 5000.0)
 scene_skybox.SetCurrentCamera(camera_skybox)
 
 # Inputs
@@ -176,9 +176,10 @@ while not keyboard.Pressed(hg.K_Escape):
 	passId = hg.SceneForwardPipelinePassViewId()
 
 	# skybox
-	scene_skybox.Update(dt)
 	camera_skybox.GetTransform().SetPos(hg.Vec3(0,0,0))
-	camera_skybox.GetTransform().SetRot(scene.GetCurrentCamera().GetTransform().GetRot())
+	_rot = hg.GetRotation(CarGetCurrentCamera(car_camera).GetTransform().GetWorld())
+	camera_skybox.GetTransform().SetRot(_rot)
+	scene_skybox.Update(dt)
 
 	if render_mode == "normal":
 		hg.SetViewClear(vid, 0, 0, 1.0, 0)
