@@ -26,6 +26,11 @@ def CarCameraCreate(instance_node_name, scene):
 
 	return o
 
+
+def CarGetCurrentCamera(o):
+	return o['camera_list'][o['current_camera']]['node']
+
+
 def CarCameraUpdate(o, scene, kb, dt, car_velocity, render_mode):
 	updated = False	
 	if kb.Pressed(hg.K_C):
