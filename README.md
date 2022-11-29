@@ -36,10 +36,12 @@ To run the prototype:
 - [x] Add a speed'o'meter
 - [x] Add a car and physics debug feature
 - [x] Create a tool to convert .nms tracks to JSON
+- [x] Other cars moving around
+- [x] Add a SkyBox
 - [ ] Fix physics imprecision problems
 - [ ] Fix render triangles imprecision problems
 - [ ] Real road with a side environment
-- [ ] Other cars moving around
+
 
 
 ### First version of the Raycast Car
