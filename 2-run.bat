@@ -1,3 +1,3 @@
 cd app
-..\bin\python\python.exe main.py
+python main.py
 pause

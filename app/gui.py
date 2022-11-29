@@ -5,7 +5,7 @@ from utils import MetersPerSecondToKMH
 def DrawGui(res_x, res_y, dt, dts, car_vel, vid, debug_physic, car_pos, car_mass, debug_car, control_keyboard, road_track):
 	hg.ImGuiBeginFrame(res_x, res_y, dt, hg.ReadMouse(), hg.ReadKeyboard())
 	hg.ImGuiBegin("Debug", True, hg.ImGuiWindowFlags_NoMove | hg.ImGuiWindowFlags_NoResize)
-	hg.ImGuiSetWindowSize("Debug", hg.Vec2(350, 200), hg.ImGuiCond_Once)
+	hg.ImGuiSetWindowSize("Debug", hg.Vec2(350, 210), hg.ImGuiCond_Once)
 	hg.ImGuiText("dt = " + str(round(dts, 4)))
 	hg.ImGuiText("car_mass = " + str(car_mass) + "Kg")
 	hg.ImGuiText("speed = " + str(round(MetersPerSecondToKMH(hg.Len(car_vel)))) + " km/h")
