@@ -150,12 +150,12 @@
 					"textures": [
 						{
 							"name": "uBaseOpacityMap",
-							"path": "road_blocks/block_highway_turn_in/diffuse_cement_dirty_03.png",
+							"path": "common_maps/diffuse_cement_dirty_03.png",
 							"stage": 0
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "road_blocks/block_highway_turn_in/spec_cement_dirty_03.png",
+							"path": "common_maps/spec_cement_dirty_03.png",
 							"stage": 1
 						}
 					],
@@ -211,7 +211,7 @@
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "road_blocks/block_highway_turn_in/spec_3ways_01.png",
+							"path": "common_maps/spec_3ways_01.png",
 							"stage": 1
 						}
 					],
@@ -267,7 +267,7 @@
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "road_blocks/block_highway_turn_in/spec_3ways_01.png",
+							"path": "common_maps/spec_3ways_01.png",
 							"stage": 1
 						}
 					],
@@ -318,12 +318,12 @@
 					"textures": [
 						{
 							"name": "uBaseOpacityMap",
-							"path": "road_blocks/block_highway_turn_in/diffuse_middle_wall.png",
+							"path": "common_maps/diffuse_middle_wall.png",
 							"stage": 0
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "road_blocks/block_highway_turn_in/spec_metal_red.png",
+							"path": "common_maps/spec_metal_red.png",
 							"stage": 1
 						}
 					],
@@ -374,12 +374,12 @@
 					"textures": [
 						{
 							"name": "uBaseOpacityMap",
-							"path": "road_blocks/block_highway_turn_in/diffuse_road_sides.png",
+							"path": "common_maps/diffuse_road_sides.png",
 							"stage": 0
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "road_blocks/block_highway_turn_in/spec_road_sides.png",
+							"path": "common_maps/spec_road_sides.png",
 							"stage": 1
 						}
 					],
@@ -430,12 +430,11 @@
 					"textures": [
 						{
 							"name": "uBaseOpacityMap",
-							"path": "road_blocks/block_highway_turn_in/diffuse_blank_field_tile.png",
+							"path": "common_maps/diffuse_blank_field_tile.png",
 							"stage": 0
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "road_blocks/block_highway_turn_in/spec_grass.png",
 							"stage": 1
 						}
 					],
@@ -454,9 +453,9 @@
 							"name": "uOcclusionRoughnessMetalnessColor",
 							"type": "vec4",
 							"value": [
-								1.0,
-								0.5,
-								0.25,
+								0.37599998712539673,
+								0.7900000214576721,
+								0.10199999809265137,
 								0.0
 							]
 						},
