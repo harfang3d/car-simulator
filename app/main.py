@@ -5,6 +5,7 @@ from car_camera import *
 from car_lights import *
 from gui import *
 from car_spawner import *
+from statistics import median
 import sys
 
 render_mode = "normal"
@@ -89,7 +90,7 @@ mat_ground = CreateMaterial(
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
 car = CarModelCreate("Generic Car", "car", scene, physics,
-					 res, hg.Vec3(5, 1.5, 1100), hg.Vec3(0, 0, 0))
+					 res, hg.Vec3(4, 1.5, -1000), hg.Vec3(0, 0, 0))
 
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
@@ -146,6 +147,7 @@ track_visualization = False
 track_data = GetBlockTracks()
 nodes_track_data = GetTrackDataByNode(scene, track_data)
 spawned_cars = []
+dt_history = []
 
 scene_nodes = scene.GetNodes()
 for node_idx in range(scene_nodes.size()):
@@ -172,21 +174,25 @@ while not keyboard.Pressed(hg.K_Escape):
 	mouse.Update()
 	joystick.Update()
 
-	dt = hg.TickClock()
-	dts = hg.time_to_sec_f(dt)
+	dt_history.append(hg.time_to_ns(hg.TickClock()))
+	dt_history = dt_history[:20]
+
+	dt = median(dt_history)
+	dt = hg.time_from_ns(int(dt))
+	# dt = hg.TickClock()
 
 	# Car updates
 	brake, reverse = CarModelControl(
-		car, physics, keyboard, dts, steering_wheel, joystick, control_keyboard)
+		car, physics, keyboard, dt, steering_wheel, joystick, control_keyboard)
 	car_vel, car_pos, car_lines, wheel_rays_debug = CarModelUpdate(
-		car, scene, physics, dts)
+		car, scene, physics, dt)
 	CarLightsSetBrake(carlights, brake)
 	CarLightsSetReverse(carlights, reverse)
 	CarLightsUpdate(carlights, scene, dt)
 	current_camera_node, camera_update = CarCameraUpdate(
 		car_camera, scene, keyboard, dt, car_vel, render_mode)
 	if frame > 0:
-		spawned_cars = HandleFakeCars(scene, res, nodes_track_data, car_pos, spawned_cars, dts, physics)
+		spawned_cars = HandleFakeCars(scene, res, nodes_track_data, car_pos, spawned_cars, dt, physics)
 
 	# Scene updates
 	vid = 0  # keep track of the next free view id
@@ -206,8 +212,9 @@ while not keyboard.Pressed(hg.K_Escape):
 			vid, scene_skybox, hg.IntRect(0, 0, res_x, res_y), True, pipeline, res)
 
 	# main landscape
-	hg.SceneUpdateSystems(scene, clocks, dt, physics,
-						  hg.time_from_sec_f(1/60), 3)
+	# hg.SceneUpdateSystems(scene, clocks, dt, physics,
+	# 					  hg.time_from_sec_f(1/60), 3)
+	scene.Update(dt)
 	if render_mode == "normal":
 		vid, passId = hg.SubmitSceneToPipeline(
 			vid, scene, hg.IntRect(0, 0, res_x, res_y), True, pipeline, res)
@@ -336,7 +343,7 @@ while not keyboard.Pressed(hg.K_Escape):
 
 	if render_mode == "normal":
 		vid += 1
-		physics_debug, car_debug, control_keyboard, track_visualization = DrawGui(res_x, res_y, dt, dts, car_vel, vid, physics_debug, car_pos, car['mass'], car_debug, control_keyboard, track_visualization)
+		physics_debug, car_debug, control_keyboard, track_visualization = DrawGui(res_x, res_y, dt, car_vel, vid, physics_debug, car_pos, car['mass'], car_debug, control_keyboard, track_visualization)
 
 	frame += 1
 	hg.Frame()

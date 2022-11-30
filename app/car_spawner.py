@@ -95,7 +95,8 @@ def GetRandomVectorsOnTrack(node_track_data, car_pos):
 	return track_vectors
 
 
-def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dts, physics):
+def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, physics):
+	dts = hg.time_to_sec_f(dt)
 	closest_track_data, _, _ = DetectClosestTrack(
 		nodes_track_data, local_pos)
 
@@ -127,10 +128,11 @@ def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dts, p
 			car['lerp_value'] = 0
 		if car['lerp_value'] >= 1 and car['turn_index'] == max_index - 1:
 			_, closest_vector, closest_track = DetectClosestTrack(nodes_track_data, car['node'].GetTransform().GetPos() + hg.GetZ(car['node'].GetTransform().GetWorld()) * 10)
-			car['track'] = closest_track[1]
-			car['vector'] = closest_vector
-			car['lerp_value'] = 0
-			car['turn_index'] = closest_track[0]
+			if closest_track[0] != len(closest_track[1]['pos']) - 1:
+				car['track'] = closest_track[1]
+				car['vector'] = closest_vector
+				car['lerp_value'] = 0
+				car['turn_index'] = closest_track[0]
    
 		dist_vectors = hg.Dist(car['track']['pos'][car['turn_index']], car['track']['pos'][car['turn_index'] + 1])
 		new_car_lerp = car['lerp_value'] + ((36.1111 / dist_vectors) * dts)

@@ -139,7 +139,8 @@ def CarModelApplyBrake(rccar, value, scene_physics):
 		rccar['chassis_node'], hg.Normalize(v) * (1 / 60) * f * -value, pos)
 
 
-def CarModelUpdate(rccar, scene, scene_physics, dts):
+def CarModelUpdate(rccar, scene, scene_physics, dt):
+	dts = hg.time_to_sec_f(dt)
 	scene_physics.NodeWake(rccar['chassis_node'])
 	rccar['ray_dir'] = hg.Reverse(
 		hg.GetY(rccar['chassis_node'].GetTransform().GetWorld()))
@@ -231,7 +232,8 @@ def CarModelGetParentNode(rccar):
 	return rccar['chassis_node']
 
 
-def CarModelControl(rccar, scene_physics, kb, dts, steering_wheel, joystick, control_keyboard):
+def CarModelControl(rccar, scene_physics, kb, dt, steering_wheel, joystick, control_keyboard):
+	dts = hg.time_to_sec_f(dt)
 	brake = reverse = False
 	if joystick.Down(7) or kb.Down(hg.K_Up):
 		CarModelApplyAcceleration(

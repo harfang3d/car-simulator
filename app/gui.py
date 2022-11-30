@@ -2,7 +2,8 @@ import harfang as hg
 from utils import MetersPerSecondToKMH
 
 
-def DrawGui(res_x, res_y, dt, dts, car_vel, vid, debug_physic, car_pos, car_mass, debug_car, control_keyboard, road_track):
+def DrawGui(res_x, res_y, dt, car_vel, vid, debug_physic, car_pos, car_mass, debug_car, control_keyboard, road_track):
+	dts = hg.time_to_sec_f(dt)
 	hg.ImGuiBeginFrame(res_x, res_y, dt, hg.ReadMouse(), hg.ReadKeyboard())
 	hg.ImGuiBegin("Debug", True, hg.ImGuiWindowFlags_NoMove | hg.ImGuiWindowFlags_NoResize)
 	hg.ImGuiSetWindowSize("Debug", hg.Vec2(350, 210), hg.ImGuiCond_Once)
