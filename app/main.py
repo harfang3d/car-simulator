@@ -90,7 +90,7 @@ mat_ground = CreateMaterial(
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
 car = CarModelCreate("Generic Car", "car", scene, physics,
-					 res, hg.Vec3(4, 1.5, -1000), hg.Vec3(0, 0, 0))
+					 res, hg.Vec3(4, 1.5, -11000), hg.Vec3(0, 0, 0))
 
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
@@ -212,9 +212,8 @@ while not keyboard.Pressed(hg.K_Escape):
 			vid, scene_skybox, hg.IntRect(0, 0, res_x, res_y), True, pipeline, res)
 
 	# main landscape
-	# hg.SceneUpdateSystems(scene, clocks, dt, physics,
-	# 					  hg.time_from_sec_f(1/60), 3)
-	scene.Update(dt)
+	hg.SceneUpdateSystems(scene, clocks, dt, physics,
+						  hg.time_from_sec_f(1/60), 3)
 	if render_mode == "normal":
 		vid, passId = hg.SubmitSceneToPipeline(
 			vid, scene, hg.IntRect(0, 0, res_x, res_y), True, pipeline, res)

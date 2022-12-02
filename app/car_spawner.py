@@ -135,7 +135,7 @@ def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, ph
 				car['turn_index'] = closest_track[0]
    
 		dist_vectors = hg.Dist(car['track']['pos'][car['turn_index']], car['track']['pos'][car['turn_index'] + 1])
-		new_car_lerp = car['lerp_value'] + ((36.1111 / dist_vectors) * dts)
+		new_car_lerp = car['lerp_value'] + ((36.1111 / dist_vectors) * dts) #36.1111 = 130KM/H in METERS PER SECOND
 		if new_car_lerp > 1:
 			new_car_lerp = 1
 		car['lerp_value'] = new_car_lerp
