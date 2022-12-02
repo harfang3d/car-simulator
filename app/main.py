@@ -90,7 +90,7 @@ mat_ground = CreateMaterial(
 clocks = hg.SceneClocks()
 physics = hg.SceneBullet3Physics()
 car = CarModelCreate("Generic Car", "car", scene, physics,
-					 res, hg.Vec3(4, 1.5, -11000), hg.Vec3(0, 0, 0))
+					 res, hg.Vec3(4, 1.5, -1000), hg.Vec3(0, 0, 0))
 
 carlights = CarLightsCreate("car", scene)
 physics.SceneCreatePhysicsFromAssets(scene)
