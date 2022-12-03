@@ -37,28 +37,30 @@ float SampleShadowPCF(sampler2DShadow map, vec4 coord, float inv_pixel_size, flo
 
 	float k = 0.0;
 
-#if FORWARD_PIPELINE_AAA
-	#define PCF_SAMPLE_COUNT 2 // 3x3
+// #if FORWARD_PIPELINE_AAA
+// 	#define PCF_SAMPLE_COUNT 2 // 3x3
 
-//	ARRAY_BEGIN(float, weights, 9) 0.024879, 0.107973, 0.024879, 0.107973, 0.468592, 0.107973, 0.024879, 0.107973, 0.024879 ARRAY_END();
-	ARRAY_BEGIN(float, weights, 9) 0.011147, 0.083286, 0.011147, 0.083286, 0.622269, 0.083286, 0.011147, 0.083286, 0.011147 ARRAY_END();
+// //	ARRAY_BEGIN(float, weights, 9) 0.024879, 0.107973, 0.024879, 0.107973, 0.468592, 0.107973, 0.024879, 0.107973, 0.024879 ARRAY_END();
+// 	ARRAY_BEGIN(float, weights, 9) 0.011147, 0.083286, 0.011147, 0.083286, 0.622269, 0.083286, 0.011147, 0.083286, 0.011147 ARRAY_END();
 
-	for (int j = 0; j <= PCF_SAMPLE_COUNT; ++j) {
-		float v = 6.0 * (float(j) + jitter.y) / float(PCF_SAMPLE_COUNT) - 1.0;
-		for (int i = 0; i <= PCF_SAMPLE_COUNT; ++i) {
-			float u = 6.0 * (float(i) + jitter.x) / float(PCF_SAMPLE_COUNT) - 1.0;
-			k += SampleHardShadow(map, coord + vec4(vec2(u, v) * k_pixel_size, 0.0, 0.0), bias) * weights[j * 3 + i];
-		}
-	}
-#else // FORWARD_PIPELINE_AAA
-	// 2x2
-	k += SampleHardShadow(map, coord + vec4(vec2(-0.5, -0.5) * k_pixel_size, 0.0, 0.0), bias);
-	k += SampleHardShadow(map, coord + vec4(vec2( 0.5, -0.5) * k_pixel_size, 0.0, 0.0), bias);
-	k += SampleHardShadow(map, coord + vec4(vec2(-0.5,  0.5) * k_pixel_size, 0.0, 0.0), bias);
-	k += SampleHardShadow(map, coord + vec4(vec2( 0.5,  0.5) * k_pixel_size, 0.0, 0.0), bias);
+// 	for (int j = 0; j <= PCF_SAMPLE_COUNT; ++j) {
+// 		float v = 6.0 * (float(j) + jitter.y) / float(PCF_SAMPLE_COUNT) - 1.0;
+// 		for (int i = 0; i <= PCF_SAMPLE_COUNT; ++i) {
+// 			float u = 6.0 * (float(i) + jitter.x) / float(PCF_SAMPLE_COUNT) - 1.0;
+// 			k += SampleHardShadow(map, coord + vec4(vec2(u, v) * k_pixel_size, 0.0, 0.0), bias) * weights[j * 3 + i];
+// 		}
+// 	}
+// #else // FORWARD_PIPELINE_AAA
+// 	// 2x2
+// 	k += SampleHardShadow(map, coord + vec4(vec2(-0.5, -0.5) * k_pixel_size, 0.0, 0.0), bias);
+// 	k += SampleHardShadow(map, coord + vec4(vec2( 0.5, -0.5) * k_pixel_size, 0.0, 0.0), bias);
+// 	k += SampleHardShadow(map, coord + vec4(vec2(-0.5,  0.5) * k_pixel_size, 0.0, 0.0), bias);
+// 	k += SampleHardShadow(map, coord + vec4(vec2( 0.5,  0.5) * k_pixel_size, 0.0, 0.0), bias);
 
-	k /= 4.0;
-#endif // FORWARD_PIPELINE_AAA
+// 	k /= 4.0;
+// #endif // FORWARD_PIPELINE_AAA
+
+	k = SampleHardShadow(map, coord, bias);
 
 	return k;
 }
@@ -178,28 +180,40 @@ void main() {
 	vec4 jitter = vec4_splat(0.);
 #endif // FORWARD_PIPELINE_AAA
 
+	float radiance_occluder = 1.0;
+	vec3 split_color = vec3(1,0,1);
+
 	// SLOT 0: linear light
 	{
 		float k_shadow = 1.0;
+		float bias_factor = 0.0;
 #if SLOT0_SHADOWS
 		float k_fade_split = 1.0 - jitter.z * 0.3;
+		float split_gap = uLinearShadowSlice.w - uLinearShadowSlice.x;
 
 		if(view.z < uLinearShadowSlice.x * k_fade_split) {
 			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord0, uShadowState.y * 0.5, uShadowState.z, jitter);
 		} else if(view.z < uLinearShadowSlice.y * k_fade_split) {
-			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord1, uShadowState.y * 0.5, uShadowState.z, jitter);
+			bias_factor = 1.0; // 1.0 + ((uLinearShadowSlice.y - uLinearShadowSlice.x) / split_gap) * 0.5;
+			split_color = vec3(1,0,0);
+			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord1, uShadowState.y * 0.5, uShadowState.z * bias_factor, jitter);
 		} else if(view.z < uLinearShadowSlice.z * k_fade_split) {
-			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord2, uShadowState.y * 0.5, uShadowState.z, jitter);
+			bias_factor = 1.5; // 1.0 + ((uLinearShadowSlice.z - uLinearShadowSlice.x) / split_gap) * 0.5;
+			split_color = vec3(0,1,0);
+			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord2, uShadowState.y * 0.5, uShadowState.z * bias_factor, jitter);
 		} else if(view.z < uLinearShadowSlice.w * k_fade_split) {
+		 	bias_factor = 3.0; // 1.0 + ((uLinearShadowSlice.w - uLinearShadowSlice.x) / split_gap) * 0.5;
+			split_color = vec3(0,0,1);
 #if FORWARD_PIPELINE_AAA
-			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord3, uShadowState.y * 0.5, uShadowState.z, jitter);
+			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord3, uShadowState.y * 0.5, uShadowState.z * bias_factor, jitter);
 #else // FORWARD_PIPELINE_AAA
-			float pcf = SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord3, uShadowState.y * 0.5, uShadowState.z, jitter);
+			float pcf = SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord3, uShadowState.y * 0.5, uShadowState.z * bias_factor, jitter);
 			float ramp_len = (uLinearShadowSlice.w - uLinearShadowSlice.z) * 0.25;
 			float ramp_k = clamp((view.z - (uLinearShadowSlice.w - ramp_len)) / max(ramp_len, 1e-8), 0.0, 1.0);
-			k_shadow *= pcf * (1.0 - ramp_k) + ramp_k; 
+			k_shadow *= pcf * (1.0 - ramp_k) + ramp_k;
 #endif // FORWARD_PIPELINE_AAA
 		}
+		radiance_occluder *= k_shadow;
 #endif // SLOT0_SHADOWS
 		color += GGX(V, N, NdotV, uLightDir[0].xyz, base_opacity.xyz, occ_rough_metal.g, occ_rough_metal.b, F0, uLightDiffuse[0].xyz * k_shadow, uLightSpecular[0].xyz * k_shadow);
 	}
@@ -241,6 +255,7 @@ void main() {
 
 	vec3 irradiance = textureCube(uIrradianceMap, ReprojectProbe(P, N)).xyz;
 	vec3 radiance = textureCubeLod(uRadianceMap, ReprojectProbe(P, R), occ_rough_metal.y * MAX_REFLECTION_LOD).xyz;
+	radiance *= (radiance_occluder * 0.9) + 0.1;
 
 #if FORWARD_PIPELINE_AAA
 	vec4 ss_irradiance = texture2D(uSSIrradianceMap, gl_FragCoord.xy / uResolution.xy);
@@ -292,6 +307,8 @@ void main() {
 #endif // FORWARD_PIPELINE_AAA != 1
 
 	gl_FragColor = vec4(color, opacity);
+	// gl_FragColor = vec4(radiance_occluder, radiance_occluder, radiance_occluder, opacity); // vec4(color, opacity);
+	// gl_FragColor = vec4((vec3(radiance_occluder, radiance_occluder, radiance_occluder) + split_color) * 0.5, opacity); // vec4(color, opacity);
 #endif // FORWARD_PIPELINE_AAA_PREPASS
 #else
 	gl_FragColor = vec4_splat(0.0); // note: fix required to stop glsl-optimizer from removing the whole function body
