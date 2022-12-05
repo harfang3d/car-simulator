@@ -85,7 +85,7 @@
 						},
 						{
 							"name": "uSelfMap",
-							"path": "weather/sky/clarens_night_01.hdr",
+							"path": "probes/clarens_night_01.hdr",
 							"stage": 4
 						}
 					],
@@ -140,7 +140,7 @@
 				0.0
 			],
 			"rot": [
-				89.99995422363281,
+				89.99994659423828,
 				180.0,
 				180.0
 			],
