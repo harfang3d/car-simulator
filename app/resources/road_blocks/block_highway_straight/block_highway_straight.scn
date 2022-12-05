@@ -2049,14 +2049,14 @@
 		"fog_far": 0.0,
 		"fog_near": 0.0,
 		"probe": {
-			"irradiance_map": "core/pbr/probe.hdr.irradiance",
+			"irradiance_map": "probes/clarens_night_01.hdr.irradiance",
 			"parallax": 0.0,
 			"pos": [
 				0.0,
 				0.0,
 				0.0
 			],
-			"radiance_map": "core/pbr/probe.hdr.radiance",
+			"radiance_map": "probes/clarens_night_01.hdr.radiance",
 			"rot": [
 				0.0,
 				0.0,
@@ -2482,6 +2482,16 @@
 							"name": "uBaseOpacityMap",
 							"path": "common_maps/block_highway_straight_ground_ao.png",
 							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "common_maps/block_highway_straight_ground_normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "common_maps/block_highway_straight_ground_orm.png",
+							"stage": 1
 						}
 					],
 					"values": [
@@ -2500,8 +2510,8 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.5,
-								0.25,
+								0.8999999761581421,
+								0.12600000202655792,
 								0.0
 							]
 						},
