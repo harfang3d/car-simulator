@@ -83,6 +83,11 @@
 							"name": "uBaseOpacityMap",
 							"path": "common_maps/uv_mapper.png",
 							"stage": 0
+						},
+						{
+							"name": "uSelfMap",
+							"path": "common_maps/uv_mapper.png",
+							"stage": 4
 						}
 					],
 					"values": [
@@ -91,8 +96,8 @@
 							"type": "vec4",
 							"value": [
 								0.0,
-								0.24034622311592102,
-								0.37974685430526733,
+								0.0,
+								0.0,
 								1.0
 							]
 						},
@@ -110,8 +115,8 @@
 							"name": "uOcclusionRoughnessMetalnessColor",
 							"type": "vec4",
 							"value": [
-								1.0,
-								0.9380000233650208,
+								0.0,
+								0.0,
 								0.0,
 								1.0
 							]
@@ -121,8 +126,8 @@
 							"type": "vec4",
 							"value": [
 								0.0,
-								0.17892436683177948,
-								0.28270047903060913,
+								0.0,
+								0.0,
 								-1.0
 							]
 						},
