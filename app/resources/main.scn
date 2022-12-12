@@ -38,14 +38,14 @@
 		"fog_far": 0.0,
 		"fog_near": 0.0,
 		"probe": {
-			"irradiance_map": "core/pbr/probe.hdr.irradiance",
+			"irradiance_map": "probes/clarens_night_01.hdr.irradiance",
 			"parallax": 0.0,
 			"pos": [
 				0.0,
 				0.0,
 				0.0
 			],
-			"radiance_map": "core/pbr/probe.hdr.radiance",
+			"radiance_map": "probes/clarens_night_01.hdr.radiance",
 			"rot": [
 				0.0,
 				0.0,
@@ -89,28 +89,28 @@
 	"lights": [
 		{
 			"diffuse": [
-				512,
-				512,
-				512,
+				255,
+				205,
+				149,
 				255
 			],
-			"diffuse_intensity": 1.0,
+			"diffuse_intensity": 3.0,
 			"inner_angle": 0.5235987901687622,
 			"outer_angle": 0.7853981852531433,
 			"priority": 1.0,
 			"pssm_split": [
 				2.0,
-				8.0,
-				16.0,
-				64.0
+				15.0,
+				50.0,
+				150.0
 			],
 			"radius": 0.0,
 			"shadow_bias": 0.0010000000474974513,
 			"shadow_type": "map",
 			"specular": [
-				0,
-				0,
-				0,
+				255,
+				205,
+				149,
 				255
 			],
 			"specular_intensity": 1.0,
@@ -274,14 +274,14 @@
 				3.641082763671875
 			],
 			"rot": [
-				26.666213989257813,
-				-160.28970336914063,
-				-159.97998046875
+				13.957301139831543,
+				-143.81979370117188,
+				-175.9149169921875
 			],
 			"scl": [
+				0.999999463558197,
 				0.9999996423721313,
-				0.9999997615814209,
-				0.9999993443489075
+				0.9999996423721313
 			]
 		},
 		{
@@ -401,7 +401,7 @@
 			],
 			"rot": [
 				-0.0,
-				179.9999542236328,
+				179.99993896484375,
 				0.0
 			],
 			"scl": [
