@@ -2,6 +2,7 @@ import harfang as hg
 import json
 import os
 from utils import *
+from math import pi
 from gui import DrawLine
 from random import uniform, randint
 
@@ -135,7 +136,7 @@ def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, ph
 				car['turn_index'] = closest_track[0]
    
 		dist_vectors = hg.Dist(car['track']['pos'][car['turn_index']], car['track']['pos'][car['turn_index'] + 1])
-		new_car_lerp = car['lerp_value'] + ((36.1111 / dist_vectors) * dts) #36.1111 = 130KM/H in METERS PER SECOND
+		new_car_lerp = car['lerp_value'] + ((KMHtoMPS(car['track']['speed']) / dist_vectors) * dts)
 		if new_car_lerp > 1:
 			new_car_lerp = 1
 		car['lerp_value'] = new_car_lerp
@@ -145,7 +146,25 @@ def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, ph
 			if car['lerp_value'] < 1:
 				wanted_rot = hg.GetRotation(hg.Mat4LookAt(car['node'].GetTransform().GetPos(), car['track']['pos'][car['turn_index'] + 1]))
 				car['node'].GetTransform().SetRot(hg.Vec3(0, wanted_rot.y, 0))
-     
+	
+		car_wheels = []
+		scene_view_node = car['node'].GetInstanceSceneView()
+		for n in range(4):
+			wheel = scene_view_node.GetNode(scene, "wheel_" + str(n))
+			if not wheel.IsValid():
+				print("ERROR - Wheel_" + str(n) + " node not found !")
+				return
+			car_wheels.append(wheel)
+
+		for wheel in car_wheels:
+			wheel_rot = wheel.GetTransform().GetRot()
+			wheel_circumference = 0.35 * pi * 2
+			rps = KMHtoMPS(car['track']['speed']) / wheel_circumference
+			rotation_to_add = dts * rps * 360 # 360 = one revolution, rps = revolutions per second, dts = seconds since last frame
+			new_wheel_rot = wheel_rot
+			new_wheel_rot.x += rotation_to_add
+			wheel.GetTransform().SetRot(new_wheel_rot)
+	 
 	return spawned_cars
 
 def GetBlockTracks():
@@ -181,7 +200,7 @@ def GetTrackDataByNode(scene, track_data):
 				node = scene_nodes.at(node_idx)
 				node_world = node.GetTransform().GetWorld()
 				for track in track_data[k]:
-					localized_track_data = {'id': track['id'], 'pos': []}
+					localized_track_data = {'id': track['id'], 'pos': [], 'speed': track['speed']}
 					track_pos = track['pos']
 					for vec3 in track_pos:
 						localized_track_data['pos'].append(
