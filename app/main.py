@@ -5,6 +5,7 @@ from car_camera import *
 from car_lights import *
 from gui import *
 from car_spawner import *
+from track_handler import *
 from statistics import median
 import sys
 
@@ -60,7 +61,7 @@ scene = hg.Scene()
 hg.LoadSceneFromAssets("main.scn", scene, res, hg.GetForwardPipelineInfo())
 
 scene_skybox = hg.Scene()
-hg.LoadSceneFromAssets("weather/skybox.scn", scene_skybox,
+hg.LoadSceneFromAssets("weather/sky/sky.scn", scene_skybox,
 					   res, hg.GetForwardPipelineInfo())
 
 # Ground

@@ -7,7 +7,7 @@ from gui import DrawLine
 from random import uniform, randint
 
 
-def DetectClosestTrack(nodes_track_data, local_pos):
+def DetectClosestTrack(nodes_track_data, target_pos):
 	closest_track_data = None
 	closest_vector = None
 	closest_track = None
@@ -40,8 +40,8 @@ def DetectClosestTrack(nodes_track_data, local_pos):
 					closest_vector = vector
 					closest_track = [vec_index, track]
 				else:
-					if hg.Contains(track_min_max, local_pos):
-						if hg.Dist(local_pos, vector) < hg.Dist(local_pos, closest_vector):
+					if hg.Contains(track_min_max, target_pos):
+						if hg.Dist(target_pos, vector) < hg.Dist(target_pos, closest_vector):
 							closest_track_data = nodes_data
 							closest_vector = vector
 							closest_track = [vec_index, track]
@@ -56,14 +56,14 @@ def DetectClosestTrack(nodes_track_data, local_pos):
 				closest_track_data = nodes_data
 				for track in nodes_data['track_data']:
 					for vec_index, vector in enumerate(track['pos']):
-						if hg.Dist(local_pos, vector) < hg.Dist(local_pos, closest_vector):
+						if hg.Dist(target_pos, vector) < hg.Dist(target_pos, closest_vector):
 							closest_vector = vector
 							closest_track = [vec_index, track]
-			if hg.Dist(local_pos, node.GetTransform().GetPos()) < hg.Dist(local_pos, closest_track_data['node'].GetTransform().GetPos()):
+			if hg.Dist(target_pos, node.GetTransform().GetPos()) < hg.Dist(target_pos, closest_track_data['node'].GetTransform().GetPos()):
 				closest_track_data = nodes_data
 				for track in nodes_data['track_data']:
 					for vec_index, vector in enumerate(track['pos']):
-						if hg.Dist(local_pos, vector) < hg.Dist(local_pos, closest_vector):
+						if hg.Dist(target_pos, vector) < hg.Dist(target_pos, closest_vector):
 							closest_vector = vector
 							closest_track = [vec_index, track]
 
@@ -158,7 +158,7 @@ def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, ph
 
 		for wheel in car_wheels:
 			wheel_rot = wheel.GetTransform().GetRot()
-			wheel_circumference = 0.35 * pi * 2
+			wheel_circumference = 0.35 * pi * 2 # 0.35 : wheel radius
 			rps = KMHtoMPS(car['track']['speed']) / wheel_circumference
 			rotation_to_add = dts * rps * 360 # 360 = one revolution, rps = revolutions per second, dts = seconds since last frame
 			new_wheel_rot = wheel_rot
@@ -166,28 +166,6 @@ def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, ph
 			wheel.GetTransform().SetRot(new_wheel_rot)
 	 
 	return spawned_cars
-
-def GetBlockTracks():
-	file_dir_out = "out/"
-	path = os.getcwd() + "/../tools/path_converter/" + file_dir_out
-
-	files = []
-
-	for r, d, f in os.walk(path):
-		for file in f:
-			files.append(os.path.join(r, file))
-
-	final_data = {}
-
-	for f in files:
-		with open(f, 'r') as json_file:
-			file_name = os.path.basename(f).replace(".json", "")
-			node_name = file_name.replace("_tracks", "")
-			data = json.loads(json_file.read())
-			final_data[node_name] = data
-
-	return final_data
-
 
 def GetTrackDataByNode(scene, track_data):
 	node_track_data = []
