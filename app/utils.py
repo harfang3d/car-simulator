@@ -19,7 +19,6 @@ def MetersPerSecondToKMH(meterspersecond):
 def KMHtoMPS(kmh):
 	return kmh / 3.6
 
-
 def NodeGetPhysicsMass(node):
     n = node.GetCollisionCount()
     mass = 0

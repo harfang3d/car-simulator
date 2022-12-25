@@ -60,7 +60,7 @@ scene = hg.Scene()
 hg.LoadSceneFromAssets("main.scn", scene, res, hg.GetForwardPipelineInfo())
 
 scene_skybox = hg.Scene()
-hg.LoadSceneFromAssets("weather/sky/sky.scn", scene_skybox,
+hg.LoadSceneFromAssets("weather/skybox.scn", scene_skybox,
 					   res, hg.GetForwardPipelineInfo())
 
 # Ground
