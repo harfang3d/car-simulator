@@ -1,0 +1,7 @@
+{
+	"profiles": {
+		"default": {
+			"max-size": 1024
+		}
+	}
+}

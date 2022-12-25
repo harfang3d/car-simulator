@@ -289,7 +289,7 @@ void main() {
 	float opacity = base_opacity.w;
 
 #if ENABLE_ALPHA_CUT
-	if (opacity < 0.8)
+	if (opacity < 0.25)
 		discard;
 #endif // ENABLE_ALPHA_CUT
 
