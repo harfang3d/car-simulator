@@ -5,5 +5,5 @@
 - Changer les degrés en radians # FAIT
 
 - Reprendre l'algo qui prépare les tracks:
-    - mettre la track d'avant et celle d'après
-    - préparer les bounding box ici
+    - mettre la track d'avant et celle d'après # A revoir
+    - préparer les bounding box ici # FAIT
