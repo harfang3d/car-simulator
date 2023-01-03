@@ -1,9 +1,0 @@
-- Bouger les chemins du path converter vers les ressources # FAIT
-- Changer localized vers transformed # FAIT
-- Commenter l'init des mesh physique sur les virages # FAIT
-- Nomenclature des fonctions + commenter le cas d'utilisation # FAIT
-- Changer les degrés en radians # FAIT
-
-- Reprendre l'algo qui prépare les tracks:
-    - mettre la track d'avant et celle d'après # A revoir
-    - préparer les bounding box ici # FAIT
