@@ -2,8 +2,7 @@ import json
 import os
 
 def GetBlockTracks():
-	file_dir_out = "out/"
-	path = os.getcwd() + "/../tools/path_converter/" + file_dir_out
+	path = os.getcwd() + "/assets/road_tracks"
 
 	files = []
 
