@@ -2,11 +2,8 @@
 - Changer localized vers transformed # FAIT
 - Commenter l'init des mesh physique sur les virages # FAIT
 - Nomenclature des fonctions + commenter le cas d'utilisation # FAIT
-
-- Changer les degrés en radians
+- Changer les degrés en radians # FAIT
 
 - Reprendre l'algo qui prépare les tracks:
     - mettre la track d'avant et celle d'après
     - préparer les bounding box ici
-
-- Préparer les issues pour cette todo

@@ -160,9 +160,9 @@ def HandleAutomatedCars(scene, res, nodes_track_data, local_pos, spawned_cars, d
 			wheel_rot = wheel.GetTransform().GetRot()
 			wheel_circumference = 0.35 * pi * 2 # 0.35 : wheel radius
 			rps = KMHtoMPS(car['track']['speed']) / wheel_circumference
-			rotation_to_add = dts * rps * 360 # 360 = one revolution, rps = revolutions per second, dts = seconds since last frame
+			angle_to_add = dts * rps * 360 # 360 = one revolution, rps = revolutions per second, dts = seconds since last frame
 			new_wheel_rot = wheel_rot
-			new_wheel_rot.x += rotation_to_add
+			new_wheel_rot.x += hg.Rad(angle_to_add)
 			wheel.GetTransform().SetRot(new_wheel_rot)
 	 
 	return spawned_cars
