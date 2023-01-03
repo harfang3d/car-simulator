@@ -7,7 +7,7 @@ from gui import DrawLine
 from random import uniform, randint
 
 
-def DetectClosestTrack(nodes_track_data, target_pos):
+def DetectClosestTrack(nodes_track_data, target_pos): # Detect the closest track (attached to a node in the scene) to a given position.
 	closest_track_data = None
 	closest_vector = None
 	closest_track = None
@@ -70,7 +70,7 @@ def DetectClosestTrack(nodes_track_data, target_pos):
 	return closest_track_data, closest_vector, closest_track
 
 
-def GetRandomVectorsOnTrack(node_track_data, car_pos):
+def GetRandomVectorsOnTrack(node_track_data, car_pos): # Grab a random vector from a track within a certain distance from the given car position (will be a lerped position if track only contains two vectors)
 	track_data = node_track_data['track_data']
 	track_vectors = []
 	for track in track_data:
@@ -96,7 +96,7 @@ def GetRandomVectorsOnTrack(node_track_data, car_pos):
 	return track_vectors
 
 
-def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, physics):
+def HandleAutomatedCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, physics): # Algorithm handling the position, rotation and wheel rotation of the autonomous cars
 	dts = hg.time_to_sec_f(dt)
 	closest_track_data, _, _ = DetectClosestTrack(
 		nodes_track_data, local_pos)
@@ -167,30 +167,30 @@ def HandleFakeCars(scene, res, nodes_track_data, local_pos, spawned_cars, dt, ph
 	 
 	return spawned_cars
 
-def GetTrackDataByNode(scene, track_data):
+def GetTrackDataByNode(scene, track_data): # Returns the list of all the nodes that correspond to a track in a scene, with transformed positions
 	node_track_data = []
 	scene_nodes = scene.GetNodes()
 	for node_idx in range(scene_nodes.size()):
 		node_name = scene_nodes.at(node_idx).GetName()
 		for k in track_data:
 			if node_name == k:
-				node_localized_tracks = []
+				node_transformed_tracks = []
 				node = scene_nodes.at(node_idx)
 				node_world = node.GetTransform().GetWorld()
 				for track in track_data[k]:
-					localized_track_data = {'id': track['id'], 'pos': [], 'speed': track['speed']}
+					transformed_track_data = {'id': track['id'], 'pos': [], 'speed': track['speed']}
 					track_pos = track['pos']
 					for vec3 in track_pos:
-						localized_track_data['pos'].append(
+						transformed_track_data['pos'].append(
 							node_world * hg.Vec3(vec3[0], vec3[1], vec3[2]))
-					node_localized_tracks.append(localized_track_data)
+					node_transformed_tracks.append(transformed_track_data)
 				node_track_data.append(
-					{'node': node, 'id': node_idx, 'track_data': node_localized_tracks})
+					{'node': node, 'id': node_idx, 'track_data': node_transformed_tracks})
 
 	return node_track_data
 
 
-def DrawTrackData(node_track_data, opaque_view_id, vtx_line_layout, lines_program):
+def DrawTrackData(node_track_data, opaque_view_id, vtx_line_layout, lines_program): # Draws green lines between each vector of a given track
 	tracks = node_track_data['track_data']
 	for index, track in enumerate(tracks):
 		# index 123 roads in the same direction as driver

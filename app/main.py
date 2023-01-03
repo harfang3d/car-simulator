@@ -150,15 +150,17 @@ nodes_track_data = GetTrackDataByNode(scene, track_data)
 spawned_cars = []
 dt_history = []
 
-scene_nodes = scene.GetNodes()
-for node_idx in range(scene_nodes.size()):
-	node_name = scene_nodes.at(node_idx).GetName()
-	if node_name == "block_highway_turn_in":
-		highway_turn_node = scene_nodes.at(node_idx)
+
+# Init physics mesh from turn geometry
+scene_nodes = scene.GetNodes() # Get all nodes
+for node_idx in range(scene_nodes.size()): # Loop through every node indexes
+	node_name = scene_nodes.at(node_idx).GetName() # Get node name
+	if node_name == "block_highway_turn_in": # Verify if it is a turn
+		highway_turn_node = scene_nodes.at(node_idx) # Grab node object
 		mesh_col = scene.CreateCollision()
 		mesh_col.SetType(hg.CT_Mesh)
 		mesh_col.SetCollisionResource(
-			"road_blocks/block_highway_turn_in/block_highway_turn_in_42.physics_bullet")
+			"road_blocks/block_highway_turn_in/block_highway_turn_in_42.physics_bullet") # Set collision ressource to the compiled physics mesh path (directly from assets)
 		mesh_col.SetMass(0)
 		highway_turn_node.SetCollision(0, mesh_col)
 		# create rigid body
@@ -193,7 +195,7 @@ while not keyboard.Pressed(hg.K_Escape):
 	current_camera_node, camera_update = CarCameraUpdate(
 		car_camera, scene, keyboard, dt, car_vel, render_mode)
 	if frame > 0:
-		spawned_cars = HandleFakeCars(scene, res, nodes_track_data, car_pos, spawned_cars, dt, physics)
+		spawned_cars = HandleAutomatedCars(scene, res, nodes_track_data, car_pos, spawned_cars, dt, physics)
 
 	# Scene updates
 	vid = 0  # keep track of the next free view id
