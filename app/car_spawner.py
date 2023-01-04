@@ -63,7 +63,7 @@ def GetRandomVectorsOnTrack(node_track_data, car_pos):
 		lerp_value = 0
 
 		while hg.Dist(car_pos, random_vec) > 300 or hg.Dist(car_pos, random_vec) < 100:
-			lerp_value = uniform(0, 1)
+			lerp_value = uniform(0, 0.98)
 			if len(track['pos']) == 2:
 				turn_index = 0
 				random_vec = hg.Lerp(
@@ -110,7 +110,6 @@ def HandleAutomatedCars(scene, res, nodes_track_data, local_pos, spawned_cars, d
 					pos), "vehicles/ai_vehicle/drivable_car.scn", res, hg.GetForwardPipelineInfo())
 				print("Just spawned a car at Vec3(" + str(pos.x) +
 					  ", " + str(pos.y) + ", " + str(pos.z) + ")")
-				spawned_cars
 				track_vector['node'] = node
 				spawned_cars.append(track_vector)
 				physics.SceneCreatePhysicsFromAssets(scene)
