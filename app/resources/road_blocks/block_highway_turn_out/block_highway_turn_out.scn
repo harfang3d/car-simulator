@@ -99,7 +99,7 @@
 					"textures": [
 						{
 							"name": "uBaseOpacityMap",
-							"path": "road_blocks/block_highway_turn_out/diffuse_tille_rambardes_02.tga",
+							"path": "common_maps/diffuse_tille_rambardes_02.tga",
 							"stage": 0
 						}
 					],
@@ -206,7 +206,7 @@
 					"textures": [
 						{
 							"name": "uBaseOpacityMap",
-							"path": "road_blocks/block_highway_turn_out/bit40m3v_02.dds",
+							"path": "common_maps/bit40m3v_02.dds",
 							"stage": 0
 						},
 						{

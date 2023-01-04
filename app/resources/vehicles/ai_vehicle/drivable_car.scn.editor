@@ -21,7 +21,8 @@
 							9,
 							12,
 							10,
-							13
+							13,
+							14
 						],
 						"ref": 0
 					},
@@ -51,7 +52,7 @@
 			"subdiv_size": 1.0
 		},
 		"navigation_plugin": {
-			"orbit_distance": 7.620790481567383,
+			"orbit_distance": 5.0,
 			"speed": 0.10000000149011612,
 			"turbo": 1.0
 		},

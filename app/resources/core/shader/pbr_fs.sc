@@ -180,40 +180,28 @@ void main() {
 	vec4 jitter = vec4_splat(0.);
 #endif // FORWARD_PIPELINE_AAA
 
-	float radiance_occluder = 1.0;
-	vec3 split_color = vec3(1,0,1);
-
 	// SLOT 0: linear light
 	{
 		float k_shadow = 1.0;
-		float bias_factor = 0.0;
 #if SLOT0_SHADOWS
 		float k_fade_split = 1.0 - jitter.z * 0.3;
-		float split_gap = uLinearShadowSlice.w - uLinearShadowSlice.x;
 
 		if(view.z < uLinearShadowSlice.x * k_fade_split) {
 			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord0, uShadowState.y * 0.5, uShadowState.z, jitter);
 		} else if(view.z < uLinearShadowSlice.y * k_fade_split) {
-			bias_factor = 1.0; // 1.0 + ((uLinearShadowSlice.y - uLinearShadowSlice.x) / split_gap) * 0.5;
-			split_color = vec3(1,0,0);
-			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord1, uShadowState.y * 0.5, uShadowState.z * bias_factor, jitter);
+			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord1, uShadowState.y * 0.5, uShadowState.z, jitter);
 		} else if(view.z < uLinearShadowSlice.z * k_fade_split) {
-			bias_factor = 1.5; // 1.0 + ((uLinearShadowSlice.z - uLinearShadowSlice.x) / split_gap) * 0.5;
-			split_color = vec3(0,1,0);
-			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord2, uShadowState.y * 0.5, uShadowState.z * bias_factor, jitter);
+			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord2, uShadowState.y * 0.5, uShadowState.z, jitter);
 		} else if(view.z < uLinearShadowSlice.w * k_fade_split) {
-		 	bias_factor = 3.0; // 1.0 + ((uLinearShadowSlice.w - uLinearShadowSlice.x) / split_gap) * 0.5;
-			split_color = vec3(0,0,1);
 #if FORWARD_PIPELINE_AAA
-			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord3, uShadowState.y * 0.5, uShadowState.z * bias_factor, jitter);
+			k_shadow *= SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord3, uShadowState.y * 0.5, uShadowState.z, jitter);
 #else // FORWARD_PIPELINE_AAA
-			float pcf = SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord3, uShadowState.y * 0.5, uShadowState.z * bias_factor, jitter);
+			float pcf = SampleShadowPCF(uLinearShadowMap, vLinearShadowCoord3, uShadowState.y * 0.5, uShadowState.z, jitter);
 			float ramp_len = (uLinearShadowSlice.w - uLinearShadowSlice.z) * 0.25;
 			float ramp_k = clamp((view.z - (uLinearShadowSlice.w - ramp_len)) / max(ramp_len, 1e-8), 0.0, 1.0);
-			k_shadow *= pcf * (1.0 - ramp_k) + ramp_k;
+			k_shadow *= pcf * (1.0 - ramp_k) + ramp_k; 
 #endif // FORWARD_PIPELINE_AAA
 		}
-		radiance_occluder *= k_shadow;
 #endif // SLOT0_SHADOWS
 		color += GGX(V, N, NdotV, uLightDir[0].xyz, base_opacity.xyz, occ_rough_metal.g, occ_rough_metal.b, F0, uLightDiffuse[0].xyz * k_shadow, uLightSpecular[0].xyz * k_shadow);
 	}
@@ -255,7 +243,6 @@ void main() {
 
 	vec3 irradiance = textureCube(uIrradianceMap, ReprojectProbe(P, N)).xyz;
 	vec3 radiance = textureCubeLod(uRadianceMap, ReprojectProbe(P, R), occ_rough_metal.y * MAX_REFLECTION_LOD).xyz;
-	radiance *= (radiance_occluder * 0.9) + 0.1;
 
 #if FORWARD_PIPELINE_AAA
 	vec4 ss_irradiance = texture2D(uSSIrradianceMap, gl_FragCoord.xy / uResolution.xy);
@@ -289,7 +276,7 @@ void main() {
 	float opacity = base_opacity.w;
 
 #if ENABLE_ALPHA_CUT
-	if (opacity < 0.8)
+	if (opacity < 0.25)
 		discard;
 #endif // ENABLE_ALPHA_CUT
 

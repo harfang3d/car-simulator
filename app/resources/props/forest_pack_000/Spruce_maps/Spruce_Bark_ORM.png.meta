@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"default": {
+			"compression": "BC2",
+			"mag-filter": "Anisotropic",
+			"max-size": 1024,
+			"min-filter": "Anisotropic"
+		}
+	}
+}

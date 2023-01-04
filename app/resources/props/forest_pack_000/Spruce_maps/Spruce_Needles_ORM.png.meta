@@ -1,0 +1,8 @@
+{
+	"profiles": {
+		"default": {
+			"compression": "BC2",
+			"max-size": 1024
+		}
+	}
+}

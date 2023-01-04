@@ -2049,14 +2049,14 @@
 		"fog_far": 0.0,
 		"fog_near": 0.0,
 		"probe": {
-			"irradiance_map": "probes/clarens_night_01.hdr.irradiance",
+			"irradiance_map": "probes/kloppenheim_07_1k.hdr.irradiance",
 			"parallax": 0.0,
 			"pos": [
 				0.0,
 				0.0,
 				0.0
 			],
-			"radiance_map": "probes/clarens_night_01.hdr.radiance",
+			"radiance_map": "probes/kloppenheim_07_1k.hdr.radiance",
 			"rot": [
 				0.0,
 				0.0,
@@ -2388,6 +2388,426 @@
 			"disabled": false,
 			"idx": 0,
 			"name": "block_highway_straight"
+		},
+		{
+			"components": [
+				1,
+				4294967295,
+				1,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 1,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				2,
+				4294967295,
+				2,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 2,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				3,
+				4294967295,
+				3,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 3,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				4,
+				4294967295,
+				4,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 4,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				5,
+				4294967295,
+				5,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 5,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				6,
+				4294967295,
+				6,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 6,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				7,
+				4294967295,
+				7,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 7,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				8,
+				4294967295,
+				8,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 8,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				9,
+				4294967295,
+				9,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 9,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				10,
+				4294967295,
+				10,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 10,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				11,
+				4294967295,
+				11,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 11,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				12,
+				4294967295,
+				12,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 12,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				13,
+				4294967295,
+				13,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 13,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				14,
+				4294967295,
+				14,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 14,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				15,
+				4294967295,
+				15,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 15,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				16,
+				4294967295,
+				16,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 16,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				17,
+				4294967295,
+				17,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 17,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				18,
+				4294967295,
+				18,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 18,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				19,
+				4294967295,
+				19,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 19,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				20,
+				4294967295,
+				20,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 20,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				21,
+				4294967295,
+				21,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 21,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				22,
+				4294967295,
+				22,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 22,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				23,
+				4294967295,
+				23,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 23,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				24,
+				4294967295,
+				24,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 24,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				25,
+				4294967295,
+				25,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 25,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				26,
+				4294967295,
+				26,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 26,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				27,
+				4294967295,
+				27,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 27,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				28,
+				4294967295,
+				28,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 28,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				29,
+				4294967295,
+				29,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 29,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				30,
+				4294967295,
+				30,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 30,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				31,
+				4294967295,
+				31,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 31,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				32,
+				4294967295,
+				32,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 32,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				33,
+				4294967295,
+				33,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 33,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				34,
+				4294967295,
+				34,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 34,
+			"name": "tree_spruce_1_LOD2"
+		},
+		{
+			"components": [
+				35,
+				4294967295,
+				35,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 35,
+			"name": "tree_spruce_1_LOD2"
 		}
 	],
 	"objects": [
@@ -2653,7 +3073,7 @@
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "common_maps/spec_3ways_01.png",
+							"path": "common_maps/bit40m3v_02_orm.png",
 							"stage": 1
 						}
 					],
@@ -2709,7 +3129,7 @@
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "common_maps/spec_3ways_01.png",
+							"path": "common_maps/bit15m3v_02_orm.png",
 							"stage": 1
 						}
 					],
@@ -2765,7 +3185,7 @@
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "common_maps/spec_metal_red.png",
+							"path": "common_maps/diffuse_middle_wall_orm.png",
 							"stage": 1
 						}
 					],
@@ -2821,7 +3241,7 @@
 						},
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "common_maps/spec_road_sides.png",
+							"path": "common_maps/diffuse_road_sides_orm.png",
 							"stage": 1
 						}
 					],
@@ -2865,6 +3285,5186 @@
 				}
 			],
 			"name": "road_blocks/block_highway_straight/block_highway_straight_43.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "Bark1_Mat"
+				},
+				{
+					"name": "Spruce_1_Mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Bark_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.6639999747276306,
+								0.0,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				},
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [
+						"EnableAlphaCut"
+					],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_BC.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/forest_pack_000/Spruce_maps/Spruce_Needles_ORM.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "cutout",
+							"type": "vec4",
+							"value": [
+								0.009999999776482582,
+								0.0,
+								0.0,
+								0.0
+							]
+						},
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.20000000298023224,
+								0.20000000298023224,
+								0.09765625
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/forest_pack_000/Spruce_1/LOD2.geo"
 		}
 	],
 	"rigid_bodies": [
@@ -2894,6 +8494,636 @@
 				1.0,
 				1.0,
 				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				34.53966522216797,
+				0.8071016669273376,
+				-440.3233642578125
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				34.53966522216797,
+				0.8071016669273376,
+				-487.5658874511719
+			],
+			"rot": [
+				-0.0,
+				45.0,
+				0.0
+			],
+			"scl": [
+				1.9999998807907104,
+				2.0,
+				1.9999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				34.53966522216797,
+				0.8071016669273376,
+				-515.1024780273438
+			],
+			"rot": [
+				-0.0,
+				90.0,
+				0.0
+			],
+			"scl": [
+				1.4999998807907104,
+				1.5,
+				1.4999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				34.53966522216797,
+				0.8071016669273376,
+				-463.69482421875
+			],
+			"rot": [
+				-0.0,
+				-45.0,
+				0.0
+			],
+			"scl": [
+				1.4999998807907104,
+				1.5,
+				1.4999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				34.53966522216797,
+				0.8071016669273376,
+				-537.0884399414063
+			],
+			"rot": [
+				-0.0,
+				-90.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				38.19031524658203,
+				0.8071169257164001,
+				-527.7485961914063
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				38.19031524658203,
+				0.8071169257164001,
+				-574.9910888671875
+			],
+			"rot": [
+				-0.0,
+				45.0,
+				0.0
+			],
+			"scl": [
+				1.999999761581421,
+				2.0,
+				1.999999761581421
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				38.19031524658203,
+				0.8071169257164001,
+				-602.5276489257813
+			],
+			"rot": [
+				-0.0,
+				90.0,
+				0.0
+			],
+			"scl": [
+				1.4999996423721313,
+				1.5,
+				1.4999996423721313
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				38.19031524658203,
+				0.8071169257164001,
+				-551.1200561523438
+			],
+			"rot": [
+				-0.0,
+				-45.0,
+				0.0
+			],
+			"scl": [
+				1.4999998807907104,
+				1.5,
+				1.4999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				38.19031524658203,
+				0.8071169257164001,
+				-624.5136108398438
+			],
+			"rot": [
+				-0.0,
+				-90.0,
+				0.0
+			],
+			"scl": [
+				0.9999998807907104,
+				1.0,
+				0.9999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				28.72777557373047,
+				0.8071169257164001,
+				-353.70074462890625
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				28.72777557373047,
+				0.8071169257164001,
+				-400.9432373046875
+			],
+			"rot": [
+				-0.0,
+				45.0,
+				0.0
+			],
+			"scl": [
+				1.999999761581421,
+				2.0,
+				1.999999761581421
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				28.72777557373047,
+				0.8071169257164001,
+				-428.47979736328125
+			],
+			"rot": [
+				-0.0,
+				90.0,
+				0.0
+			],
+			"scl": [
+				1.4999995231628418,
+				1.5,
+				1.4999995231628418
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				28.72777557373047,
+				0.8071169257164001,
+				-377.07220458984375
+			],
+			"rot": [
+				-0.0,
+				-45.0,
+				0.0
+			],
+			"scl": [
+				1.4999998807907104,
+				1.5,
+				1.4999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				28.72777557373047,
+				0.8071169257164001,
+				-450.46575927734375
+			],
+			"rot": [
+				-0.0,
+				-90.0,
+				0.0
+			],
+			"scl": [
+				0.9999998211860657,
+				1.0,
+				0.9999998211860657
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				31.665069580078125,
+				0.8071169257164001,
+				-590.685546875
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				31.665069580078125,
+				0.8071169257164001,
+				-637.9280395507813
+			],
+			"rot": [
+				-0.0,
+				45.0,
+				0.0
+			],
+			"scl": [
+				1.999999761581421,
+				2.0,
+				1.999999761581421
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				31.665069580078125,
+				0.8071169257164001,
+				-665.464599609375
+			],
+			"rot": [
+				-0.0,
+				90.0,
+				0.0
+			],
+			"scl": [
+				1.4999994039535522,
+				1.5,
+				1.4999994039535522
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				31.665069580078125,
+				0.8071169257164001,
+				-614.0570068359375
+			],
+			"rot": [
+				-0.0,
+				-45.0,
+				0.0
+			],
+			"scl": [
+				1.4999998807907104,
+				1.5,
+				1.4999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				31.665069580078125,
+				0.8071169257164001,
+				-687.4505615234375
+			],
+			"rot": [
+				-0.0,
+				-90.0,
+				0.0
+			],
+			"scl": [
+				0.9999997615814209,
+				1.0,
+				0.9999997615814209
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-29.858932495117188,
+				0.8071169257164001,
+				-520.9869995117188
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-29.858932495117188,
+				0.8071169257164001,
+				-568.2294921875
+			],
+			"rot": [
+				-0.0,
+				45.0,
+				0.0
+			],
+			"scl": [
+				1.999999761581421,
+				2.0,
+				1.999999761581421
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-29.858932495117188,
+				0.8071169257164001,
+				-595.7660522460938
+			],
+			"rot": [
+				-0.0,
+				90.0,
+				0.0
+			],
+			"scl": [
+				1.4999992847442627,
+				1.5,
+				1.4999992847442627
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-29.858932495117188,
+				0.8071169257164001,
+				-544.3584594726563
+			],
+			"rot": [
+				-0.0,
+				-45.0,
+				0.0
+			],
+			"scl": [
+				1.4999998807907104,
+				1.5,
+				1.4999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-29.858932495117188,
+				0.8071169257164001,
+				-617.7520141601563
+			],
+			"rot": [
+				-0.0,
+				-90.0,
+				0.0
+			],
+			"scl": [
+				0.9999997019767761,
+				1.0,
+				0.9999997019767761
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-39.14552688598633,
+				0.8071321845054626,
+				-561.789306640625
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-39.14552688598633,
+				0.8071321845054626,
+				-609.0317993164063
+			],
+			"rot": [
+				-0.0,
+				45.0,
+				0.0
+			],
+			"scl": [
+				1.999999761581421,
+				2.0,
+				1.999999761581421
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-39.14552688598633,
+				0.8071321845054626,
+				-636.568359375
+			],
+			"rot": [
+				-0.0,
+				90.0,
+				0.0
+			],
+			"scl": [
+				1.4999991655349731,
+				1.5,
+				1.4999991655349731
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-39.14552688598633,
+				0.8071321845054626,
+				-585.1607666015625
+			],
+			"rot": [
+				-0.0,
+				-45.0,
+				0.0
+			],
+			"scl": [
+				1.4999998807907104,
+				1.5,
+				1.4999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-39.14552688598633,
+				0.8071321845054626,
+				-658.5543212890625
+			],
+			"rot": [
+				-0.0,
+				-90.0,
+				0.0
+			],
+			"scl": [
+				0.9999996423721313,
+				1.0,
+				0.9999996423721313
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-51.03364181518555,
+				0.8071321845054626,
+				-487.67718505859375
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-51.03364181518555,
+				0.8071321845054626,
+				-534.919677734375
+			],
+			"rot": [
+				-0.0,
+				45.0,
+				0.0
+			],
+			"scl": [
+				1.999999761581421,
+				2.0,
+				1.999999761581421
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-51.03364181518555,
+				0.8071321845054626,
+				-562.4562377929688
+			],
+			"rot": [
+				-0.0,
+				90.0,
+				0.0
+			],
+			"scl": [
+				1.4999990463256836,
+				1.5,
+				1.4999990463256836
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-51.03364181518555,
+				0.8071321845054626,
+				-511.04864501953125
+			],
+			"rot": [
+				-0.0,
+				-45.0,
+				0.0
+			],
+			"scl": [
+				1.4999998807907104,
+				1.5,
+				1.4999998807907104
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				-51.03364181518555,
+				0.8071321845054626,
+				-584.4421997070313
+			],
+			"rot": [
+				-0.0,
+				-90.0,
+				0.0
+			],
+			"scl": [
+				0.9999995827674866,
+				1.0,
+				0.9999995827674866
 			]
 		}
 	]
